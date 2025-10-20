@@ -200,7 +200,77 @@
         .form-items {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 20px;
+        }
+
+        .tag-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .tag-group-header {
+            font-size: 15px;
+            font-weight: 700;
+            color: #2196F3;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 8px 12px;
+            background: linear-gradient(90deg, #E3F2FD 0%, transparent 100%);
+            border-left: 4px solid #2196F3;
+            margin-bottom: 4px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(5px);
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .tag-group-header:hover {
+            background: linear-gradient(90deg, #BBDEFB 0%, transparent 100%);
+            border-left-color: #1976D2;
+            transform: translateX(2px);
+        }
+
+        .tag-group-header.selected {
+            background: linear-gradient(90deg, #BBDEFB 0%, transparent 100%);
+            border-left-color: #1976D2;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
+
+        .tag-group-header.tagged {
+            background: linear-gradient(90deg, #FFF9C4 0%, transparent 100%);
+            border-left-color: #FBC02D;
+            color: #F57F17;
+        }
+
+        .tag-group-header.tagged.selected {
+            background: linear-gradient(90deg, #FFF9C4 0%, transparent 100%);
+            border-left-color: #1976D2;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
+
+        .tag-group-header.tagged:hover {
+            background: linear-gradient(90deg, #FFF59D 0%, transparent 100%);
+        }
+
+        .tag-group-header .tag-indicator {
+            float: right;
+            font-size: 11px;
+            background: #FBC02D;
+            color: #333;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .tag-group-items {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-left: 8px;
         }
 
         .form-item {
@@ -218,9 +288,21 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
+        .form-item.selected {
+            background: #E3F2FD;
+            border-left-color: #2196F3;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
+
         .form-item.tagged {
             background: #FFF9C4;
             border-left-color: #FBC02D;
+        }
+
+        .form-item.tagged.selected {
+            background: #FFF9C4;
+            border-left-color: #2196F3;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
         }
 
         .form-item.photo {
@@ -695,7 +777,10 @@
                 <div class="add-annotation-section">
                     <h3>Add New Annotation</h3>
                     <div class="error-types" id="errorTypes"></div>
-                    <textarea class="notes-area" id="notesArea" placeholder="Or add a text comment..."></textarea>
+                    <label for="notesArea" style="font-size: 13px; color: #666; margin-bottom: 5px; display: block;">
+                        <strong style="color: #f44336;">* Required:</strong> Explain what's wrong and how it should be corrected
+                    </label>
+                    <textarea class="notes-area" id="notesArea" placeholder="Example: 'This item should not be included for light-duty vehicles. Remove it or make it conditional based on GVWR...'"></textarea>
                     <div class="action-buttons">
                         <button class="btn btn-success" id="addBtn" onclick="addAnnotation()" disabled>Add Annotation</button>
                         <button class="btn btn-secondary" id="clearBtn" onclick="clearSelection()" disabled>Clear Selection</button>
@@ -704,7 +789,7 @@
                 </div>
 
                 <div class="shortcuts">
-                    <strong>Tip:</strong> You can combine any of these: click form item + select error tag + add comment. They will save as one annotation. You can also add multiple annotations to the same form item.
+                    <strong>Tip:</strong> Select a tag group, form item, or error tag, then <strong style="color: #f44336;">add a comment</strong> (required) explaining what's wrong and how to fix it. All selected items will save as one annotation.
                 </div>
             </div>
         </div>
@@ -741,9 +826,10 @@
         // State
         let forms = [];
         let currentIndex = 0;
-        let annotations = {}; // { filename: [ {formItem, errorTag, comment, timestamp}, ... ] }
+        let annotations = {}; // { filename: [ {formItem, tagGroup, errorTag, comment, timestamp}, ... ] }
         let currentSelection = {
             formItem: null,    // { itemIndex, itemName, value }
+            tagGroup: null,    // string (tag name)
             errorTag: null,    // string
             comment: null      // string
         };
@@ -773,13 +859,10 @@
         // Load all JSON forms
         async function loadForms() {
             const formFiles = [
-                'chevrolet_silverado_maintenance_extended_compliance.json',
-                'chevrolet_silverado_no_maintenance_extended_compliance.json',
-                'chevrolet_silverado_no_maintenance_min_compliance.json',
-                'chevy_silverado_maintenance_extended_compliance.json',
-                'chevy_silverado_maintenance_min_compliance.json',
-                'skoda_kamiq_maintenance_extended_compliance.json',
-                'skoda_kamiq_maintenance_min_compliance.json'
+                'chevrolet_silverado_dvir_maintenance.json',
+                'chevrolet_silverado_dvir_no_maintenance.json',
+                'chevrolet_silverado_dvir_min_maintenance.json',
+                'chevrolet_silverado_dvir_min_no_maintenance.json'
             ];
         
             for (const filename of formFiles) {
@@ -845,7 +928,23 @@
             // Render form content
             const content = document.getElementById('formContent');
             const items = form.data.Items || [];
-        
+
+            // Group items by tags
+            const groupedItems = {};
+            const ungroupedItems = [];
+
+            items.forEach((item, index) => {
+                if (item.Tags && item.Tags.length > 0) {
+                    const tag = item.Tags[0]; // Use first tag for grouping
+                    if (!groupedItems[tag]) {
+                        groupedItems[tag] = [];
+                    }
+                    groupedItems[tag].push({ item, index });
+                } else {
+                    ungroupedItems.push({ item, index });
+                }
+            });
+
             let html = `
                 <div class="form-header">
                     <div class="form-name">${form.data.Name || 'Untitled Form'}</div>
@@ -854,28 +953,75 @@
                 <div class="item-count">${items.length} inspection items</div>
                 <div class="form-items">
             `;
-        
-            items.forEach((item, index) => {
-                const itemClass = item.ValueType === 'Photo' ? 'photo' : item.ValueType === 'Text' ? 'text' : '';
+
+            // Render grouped items
+            for (const [tag, tagItems] of Object.entries(groupedItems)) {
                 html += `
-                    <div class="form-item ${itemClass}" data-item-index="${index}" onclick="selectFormItem(${index})">
-                        <span class="tag-indicator">TAGGED</span>
-                        <div class="item-header">
-                            <span class="item-name">${index + 1}. ${item.Name}</span>
-                            ${item.RequireValue ? '<span class="item-required">REQUIRED</span>' : ''}
-                            <span class="item-type">${item.ValueType}</span>
+                    <div class="tag-group">
+                        <div class="tag-group-header" data-tag-name="${tag}" onclick="selectTagGroup('${tag.replace(/'/g, "\\'")}')">
+                            ${tag}
+                            <span class="tag-indicator" style="display: none;">TAGGED</span>
                         </div>
-                        ${item.Comment ? `<div class="item-comment">${item.Comment}</div>` : ''}
+                        <div class="tag-group-items">
+                `;
+
+                tagItems.forEach(({ item, index }) => {
+                    const itemClass = item.ValueType === 'Photo' ? 'photo' : item.ValueType === 'Text' ? 'text' : '';
+                    html += `
+                        <div class="form-item ${itemClass}" data-item-index="${index}" onclick="selectFormItem(${index})">
+                            <span class="tag-indicator">TAGGED</span>
+                            <div class="item-header">
+                                <span class="item-name">${index + 1}. ${item.Name}</span>
+                                ${item.RequireValue ? '<span class="item-required">REQUIRED</span>' : ''}
+                                <span class="item-type">${item.ValueType}</span>
+                            </div>
+                            ${item.Comment ? `<div class="item-comment">${item.Comment}</div>` : ''}
+                        </div>
+                    `;
+                });
+
+                html += `
+                        </div>
                     </div>
                 `;
-            });
-        
+            }
+
+            // Render ungrouped items if any
+            if (ungroupedItems.length > 0) {
+                html += `
+                    <div class="tag-group">
+                        <div class="tag-group-header">Other Items</div>
+                        <div class="tag-group-items">
+                `;
+
+                ungroupedItems.forEach(({ item, index }) => {
+                    const itemClass = item.ValueType === 'Photo' ? 'photo' : item.ValueType === 'Text' ? 'text' : '';
+                    html += `
+                        <div class="form-item ${itemClass}" data-item-index="${index}" onclick="selectFormItem(${index})">
+                            <span class="tag-indicator">TAGGED</span>
+                            <div class="item-header">
+                                <span class="item-name">${index + 1}. ${item.Name}</span>
+                                ${item.RequireValue ? '<span class="item-required">REQUIRED</span>' : ''}
+                                <span class="item-type">${item.ValueType}</span>
+                            </div>
+                            ${item.Comment ? `<div class="item-comment">${item.Comment}</div>` : ''}
+                        </div>
+                    `;
+                });
+
+                html += `
+                        </div>
+                    </div>
+                `;
+            }
+
             html += '</div>';
             content.innerHTML = html;
         
             // Load annotations and update UI
             renderAnnotationsList();
             updateFormItemsHighlight();
+            updateTagGroupsHighlight();
             clearSelection();
             updateProgress();
         }
@@ -913,6 +1059,9 @@
             const form = forms[currentIndex];
             const item = form.data.Items[itemIndex];
 
+            // Remove selected class from all form items
+            document.querySelectorAll('.form-item').forEach(el => el.classList.remove('selected'));
+
             // Toggle selection
             if (currentSelection.formItem && currentSelection.formItem.itemIndex === itemIndex) {
                 // Deselect - remove form item from selection
@@ -925,6 +1074,36 @@
                     itemType: item.ValueType,
                     value: `${item.Name} (${item.ValueType})`
                 };
+
+                // Add selected class to this item
+                const selectedItem = document.querySelector(`.form-item[data-item-index="${itemIndex}"]`);
+                if (selectedItem) {
+                    selectedItem.classList.add('selected');
+                }
+            }
+
+            updateSelectionDisplay();
+            updateButtonStates();
+        }
+
+        // Select tag group (toggle)
+        function selectTagGroup(tagName) {
+            // Remove selected class from all tag headers
+            document.querySelectorAll('.tag-group-header').forEach(el => el.classList.remove('selected'));
+
+            // Toggle selection
+            if (currentSelection.tagGroup === tagName) {
+                // Deselect - remove tag group from selection
+                currentSelection.tagGroup = null;
+            } else {
+                // Select - add to current selection
+                currentSelection.tagGroup = tagName;
+
+                // Add selected class to this tag header
+                const selectedHeader = document.querySelector(`.tag-group-header[data-tag-name="${tagName}"]`);
+                if (selectedHeader) {
+                    selectedHeader.classList.add('selected');
+                }
             }
 
             updateSelectionDisplay();
@@ -933,11 +1112,12 @@
         
         // Handle comment input
         function handleCommentInput() {
-            const text = document.getElementById('notesArea').value.trim();
+            const text = document.getElementById('notesArea').value;
+            const trimmedText = text.trim();
 
-            // Add or remove comment from selection
-            if (text.length > 0) {
-                currentSelection.comment = text;
+            // Add or remove comment from selection (store trimmed version)
+            if (trimmedText.length > 0) {
+                currentSelection.comment = trimmedText;
             } else {
                 currentSelection.comment = null;
             }
@@ -951,16 +1131,21 @@
             const container = document.getElementById('selectionContent');
 
             const hasFormItem = currentSelection.formItem !== null;
+            const hasTagGroup = currentSelection.tagGroup !== null;
             const hasErrorTag = currentSelection.errorTag !== null;
             const hasComment = currentSelection.comment !== null;
-            const hasAnySelection = hasFormItem || hasErrorTag || hasComment;
+            const hasAnySelection = hasFormItem || hasTagGroup || hasErrorTag || hasComment;
 
             if (!hasAnySelection) {
-                container.innerHTML = '<span class="no-selection">Nothing selected (select any combination: form item, error tag, and/or comment)</span>';
+                container.innerHTML = '<span class="no-selection">Nothing selected (select any combination: tag group, form item, error tag, and/or comment)</span>';
                 return;
             }
 
             let parts = [];
+
+            if (hasTagGroup) {
+                parts.push(`<span class="annotation-type-badge" style="background: #E8F5E9; color: #2E7D32;">Tag Group</span> ${currentSelection.tagGroup}`);
+            }
 
             if (hasFormItem) {
                 parts.push(`<span class="annotation-type-badge tagged-item-type">Form Item</span> #${currentSelection.formItem.itemIndex + 1}: ${currentSelection.formItem.itemName}`);
@@ -981,21 +1166,40 @@
         
         // Update button states
         function updateButtonStates() {
-            const hasAnySelection = currentSelection.formItem !== null ||
-                                   currentSelection.errorTag !== null ||
-                                   currentSelection.comment !== null;
+            const hasSelection = currentSelection.formItem !== null ||
+                                currentSelection.tagGroup !== null ||
+                                currentSelection.errorTag !== null;
 
-            document.getElementById('addBtn').disabled = !hasAnySelection;
-            document.getElementById('clearBtn').disabled = !hasAnySelection;
+            // Comment is already trimmed in handleCommentInput, just check if it exists
+            const hasComment = currentSelection.comment !== null && currentSelection.comment.length > 0;
+
+            // Require both: something selected AND a comment
+            const canAdd = hasSelection && hasComment;
+
+            const addBtn = document.getElementById('addBtn');
+            const clearBtn = document.getElementById('clearBtn');
+
+            if (addBtn) {
+                addBtn.disabled = !canAdd;
+            }
+            if (clearBtn) {
+                clearBtn.disabled = !(hasSelection || hasComment);
+            }
         }
         
         // Add annotation
         function addAnnotation() {
-            const hasAnySelection = currentSelection.formItem !== null ||
-                                   currentSelection.errorTag !== null ||
-                                   currentSelection.comment !== null;
+            const hasSelection = currentSelection.formItem !== null ||
+                                currentSelection.tagGroup !== null ||
+                                currentSelection.errorTag !== null;
 
-            if (!hasAnySelection) return;
+            const hasComment = currentSelection.comment !== null && currentSelection.comment.trim().length > 0;
+
+            // Enforce requirement: must have something selected AND a comment
+            if (!hasSelection || !hasComment) {
+                alert('Please provide a comment explaining what\'s wrong and how it should be corrected.');
+                return;
+            }
 
             const form = forms[currentIndex];
             const filename = form.filename;
@@ -1012,6 +1216,7 @@
                     itemName: currentSelection.formItem.itemName,
                     itemType: currentSelection.formItem.itemType
                 } : null,
+                tagGroup: currentSelection.tagGroup || null,
                 errorTag: currentSelection.errorTag || null,
                 comment: currentSelection.comment || null,
                 timestamp: new Date().toISOString()
@@ -1023,6 +1228,9 @@
             // Save to localStorage
             localStorage.setItem('dvir_annotations', JSON.stringify(annotations));
 
+            // Clear selection first
+            clearSelection();
+
             // Show indicator
             const indicator = document.getElementById('saveIndicator');
             indicator.classList.add('show');
@@ -1031,7 +1239,7 @@
             // Update UI
             renderAnnotationsList();
             updateFormItemsHighlight();
-            clearSelection();
+            updateTagGroupsHighlight();
             updateProgress();
         }
         
@@ -1039,11 +1247,20 @@
         function clearSelection() {
             currentSelection = {
                 formItem: null,
+                tagGroup: null,
                 errorTag: null,
                 comment: null
             };
+
+            // Clear all visual selections
             document.querySelectorAll('.error-tag').forEach(tag => tag.classList.remove('selected'));
+            document.querySelectorAll('.form-item').forEach(item => item.classList.remove('selected'));
+            document.querySelectorAll('.tag-group-header').forEach(header => header.classList.remove('selected'));
+
+            // Clear text area
             document.getElementById('notesArea').value = '';
+
+            // Update UI
             updateSelectionDisplay();
             updateButtonStates();
         }
@@ -1067,6 +1284,7 @@
                 // Update UI
                 renderAnnotationsList();
                 updateFormItemsHighlight();
+                updateTagGroupsHighlight();
                 updateProgress();
             }
         }
@@ -1092,8 +1310,12 @@
                 let parts = [];
 
                 // Build annotation display from components
+                if (ann.tagGroup) {
+                    parts.push(`<div><span class="annotation-type-badge" style="background: #E8F5E9; color: #2E7D32;">Tag Group</span> ${ann.tagGroup}</div>`);
+                }
+
                 if (ann.formItem) {
-                    parts.push(`<div><span class="annotation-type-badge tagged-item-type">Form Item</span> #${ann.formItem.itemIndex + 1}: ${ann.formItem.itemName} (${ann.formItem.itemType})</div>`);
+                    parts.push(`<div style="margin-top: ${parts.length > 0 ? '4px' : '0'};"><span class="annotation-type-badge tagged-item-type">Form Item</span> #${ann.formItem.itemIndex + 1}: ${ann.formItem.itemName} (${ann.formItem.itemType})</div>`);
                 }
 
                 if (ann.errorTag) {
@@ -1148,6 +1370,44 @@
                 } else {
                     itemEl.classList.remove('tagged');
                     tagIndicator.textContent = 'TAGGED';
+                }
+            });
+        }
+
+        // Update tag groups highlight (yellow for tagged groups with count)
+        function updateTagGroupsHighlight() {
+            const form = forms[currentIndex];
+            const filename = form.filename;
+            const formAnnotations = annotations[filename] || [];
+
+            // Count annotations per tag group
+            const tagGroupCounts = {};
+            formAnnotations.forEach(ann => {
+                if (ann.tagGroup) {
+                    tagGroupCounts[ann.tagGroup] = (tagGroupCounts[ann.tagGroup] || 0) + 1;
+                }
+            });
+
+            // Update UI
+            const tagHeaders = document.querySelectorAll('.tag-group-header');
+            tagHeaders.forEach(headerEl => {
+                const tagName = headerEl.getAttribute('data-tag-name');
+                const count = tagGroupCounts[tagName] || 0;
+                const tagIndicator = headerEl.querySelector('.tag-indicator');
+
+                if (!tagIndicator) return; // Skip if no indicator element
+
+                if (count > 0) {
+                    headerEl.classList.add('tagged');
+                    tagIndicator.style.display = 'inline-block';
+                    if (count === 1) {
+                        tagIndicator.textContent = 'TAGGED';
+                    } else {
+                        tagIndicator.textContent = `${count} ANNOTATIONS`;
+                    }
+                } else {
+                    headerEl.classList.remove('tagged');
+                    tagIndicator.style.display = 'none';
                 }
             });
         }
@@ -1225,7 +1485,7 @@
         // Export as CSV
         function exportAsCSV(timestamp) {
             // CSV Headers
-            const headers = ['Filename', 'Form Item Index', 'Form Item Name', 'Form Item Type', 'Error Tag', 'Comment', 'Timestamp'];
+            const headers = ['Filename', 'Tag Group', 'Form Item Index', 'Form Item Name', 'Form Item Type', 'Error Tag', 'Comment', 'Timestamp'];
             let csvContent = headers.join(',') + '\n';
 
             // Process each form's annotations
@@ -1233,6 +1493,7 @@
                 formAnnotations.forEach(ann => {
                     const row = [
                         `"${filename}"`,
+                        ann.tagGroup ? `"${ann.tagGroup}"` : '',
                         ann.formItem ? ann.formItem.itemIndex : '',
                         ann.formItem ? `"${ann.formItem.itemName}"` : '',
                         ann.formItem ? `"${ann.formItem.itemType}"` : '',

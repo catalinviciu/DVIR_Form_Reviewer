@@ -1,0 +1,222 @@
+{
+  "Name": "DVIR Form: Chevrolet Silverado",
+  "Description": "Driver Vehicle Inspection Report for Chevrolet Silverado with Minimum Compliance - Safety Inspection Only",
+  "Items": [
+    {
+      "Name": "Headlights (functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Lighting"],
+      "Position": 0
+    },
+    {
+      "Name": "Tail Lights (functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Lighting"],
+      "Position": 1
+    },
+    {
+      "Name": "Turn Signals (all directions)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Lighting"],
+      "Position": 2
+    },
+    {
+      "Name": "Brake Lights (functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Lighting"],
+      "Position": 3
+    },
+    {
+      "Name": "Reflectors (visible/intact)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Exterior"],
+      "Position": 4
+    },
+    {
+      "Name": "Tire Condition (tread/damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Tires"],
+      "Position": 5
+    },
+    {
+      "Name": "Tire Pressure (proper PSI)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Tires"],
+      "Position": 6
+    },
+    {
+      "Name": "Wheels and Rims (damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Wheels"],
+      "Position": 7
+    },
+    {
+      "Name": "Lug Nuts (secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Wheels"],
+      "Position": 8
+    },
+    {
+      "Name": "Windshield (cracks/visibility)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Exterior"],
+      "Position": 9
+    },
+    {
+      "Name": "Windshield Wipers (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Exterior"],
+      "Position": 10
+    },
+    {
+      "Name": "Rear View Mirrors (intact/visible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Exterior"],
+      "Position": 11
+    },
+    {
+      "Name": "Horn (functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Safety Equipment"],
+      "Position": 12
+    },
+    {
+      "Name": "Exhaust (leaks/damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Under Vehicle"],
+      "Position": 13
+    },
+    {
+      "Name": "Fluid Leaks (visible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Under Vehicle"],
+      "Position": 14
+    },
+    {
+      "Name": "Service Brakes (responsive)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Braking"],
+      "Position": 15
+    },
+    {
+      "Name": "Parking Brake (operational)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Braking"],
+      "Position": 16
+    },
+    {
+      "Name": "Brake Fluid Level (adequate)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Braking"],
+      "Position": 17
+    },
+    {
+      "Name": "Steering Wheel (no excessive play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Steering"],
+      "Position": 18
+    },
+    {
+      "Name": "Steering Response (responsive)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Steering"],
+      "Position": 19
+    },
+    {
+      "Name": "Seat Belts (functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Cab Interior"],
+      "Position": 20
+    },
+    {
+      "Name": "Interior Visibility (clear)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Cab Interior"],
+      "Position": 21
+    },
+    {
+      "Name": "Dashboard Warning Lights (check)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Cab Interior"],
+      "Position": 22
+    },
+    {
+      "Name": "Coupling Device (if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Towing"],
+      "Position": 23
+    },
+    {
+      "Name": "Trailer Brake Connections (if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Towing"],
+      "Position": 24
+    },
+    {
+      "Name": "Fire Extinguisher (present)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Safety Equipment"],
+      "Position": 25
+    },
+    {
+      "Name": "Warning Triangles/Flares (present)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": ["Safety Equipment"],
+      "Position": 26
+    }
+  ]
+}
