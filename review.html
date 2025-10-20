@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVIR Form Review Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100vh;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .progress-bar {
+            width: 150px;
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-primary {
+            background: #2196F3;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #757575;
+            color: white;
+        }
+
+        .btn-success {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Parameters Panel */
+        .parameters {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 8px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .param-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .param-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #999;
+            font-weight: 600;
+        }
+
+        .param-value {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .badge-info { background: #E3F2FD; color: #1976D2; }
+        .badge-success { background: #E8F5E9; color: #388E3C; }
+        .badge-warning { background: #FFF3E0; color: #F57C00; }
+        .badge-danger { background: #FFEBEE; color: #D32F2F; }
+
+        /* Form Content Panel */
+        .form-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-header {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .form-name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .form-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .form-items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .form-item {
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 6px;
+            border-left: 4px solid #2196F3;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .form-item:hover {
+            background: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-item.tagged {
+            background: #FFF9C4;
+            border-left-color: #FBC02D;
+        }
+
+        .form-item.photo {
+            border-left-color: #9C27B0;
+        }
+
+        .form-item.photo.tagged {
+            border-left-color: #FBC02D;
+        }
+
+        .form-item.text {
+            border-left-color: #FF9800;
+        }
+
+        .form-item.text.tagged {
+            border-left-color: #FBC02D;
+        }
+
+        .tag-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #FBC02D;
+            color: #333;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .form-item.tagged .tag-indicator {
+            display: block;
+        }
+
+        .item-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .item-name {
+            font-weight: 600;
+            color: #2c3e50;
+            flex: 1;
+        }
+
+        .item-required {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #f44336;
+            color: white;
+        }
+
+        .item-type {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #2196F3;
+            color: white;
+        }
+
+        .item-comment {
+            font-size: 13px;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .item-count {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 15px;
+        }
+
+        /* Annotations Panel */
+        .annotations {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .annotations h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        /* Current Selection Section */
+        .current-selection {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 6px;
+            border-left: 3px solid #2196F3;
+        }
+
+        .current-selection h3 {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .current-selection-content {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .no-selection {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+        }
+
+        /* Annotations List Section */
+        .annotations-list-section {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .annotations-list-section h3 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .annotation-count {
+            background: #2196F3;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .annotations-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .annotation-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.2s;
+        }
+
+        .annotation-item:hover {
+            border-color: #2196F3;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .annotation-type-badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+
+        .annotation-type-badge.error-tag-type {
+            background: #E3F2FD;
+            color: #1976D2;
+        }
+
+        .annotation-type-badge.tagged-item-type {
+            background: #FFF9C4;
+            color: #F57F17;
+        }
+
+        .annotation-type-badge.comment-type {
+            background: #E8F5E9;
+            color: #388E3C;
+        }
+
+        .annotation-content {
+            flex: 1;
+            font-size: 13px;
+            color: #333;
+            word-break: break-word;
+        }
+
+        .annotation-delete {
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            padding: 2px 6px;
+            font-size: 18px;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .annotation-delete:hover {
+            color: #f44336;
+        }
+
+        .no-annotations {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Add Annotation Section */
+        .add-annotation-section h3 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .error-types {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .error-tag {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .error-tag:hover {
+            border-color: #2196F3;
+        }
+
+        .error-tag.selected {
+            background: #2196F3;
+            color: white;
+            border-color: #2196F3;
+        }
+
+        .notes-area {
+            width: 100%;
+            min-height: 100px;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+            margin-bottom: 15px;
+        }
+
+        .notes-area:focus {
+            outline: none;
+            border-color: #2196F3;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .save-indicator {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .save-indicator.show {
+            opacity: 1;
+        }
+
+        .shortcuts {
+            margin-top: 15px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 18px;
+            color: #999;
+        }
+
+        .error-message {
+            background: #FFEBEE;
+            color: #C62828;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        /* Export Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .modal h3 {
+            margin: 0 0 20px 0;
+            font-size: 20px;
+            color: #2c3e50;
+        }
+
+        .modal-content {
+            margin-bottom: 20px;
+        }
+
+        .format-option {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .format-option:hover {
+            border-color: #2196F3;
+            background: #f5f5f5;
+        }
+
+        .format-option.selected {
+            border-color: #2196F3;
+            background: #E3F2FD;
+        }
+
+        .format-option input[type="radio"] {
+            margin-right: 12px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .format-option-content {
+            flex: 1;
+        }
+
+        .format-option-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .format-option-desc {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-top">
+                    <h1>DVIR Form Review Tool</h1>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">Loading...</div>
+                </div>
+                <div class="parameters" id="parametersPanel">
+                    <div class="param-item">
+                        <span class="param-label">File:</span>
+                        <span class="param-value" id="paramFilename">-</span>
+                    </div>
+                    <div class="param-item">
+                        <span class="param-label">Vehicle:</span>
+                        <span class="param-value" id="paramVehicle">-</span>
+                    </div>
+                    <div class="param-item">
+                        <span class="param-label">Maintenance:</span>
+                        <span class="param-value" id="paramMaintenance">-</span>
+                    </div>
+                    <div class="param-item">
+                        <span class="param-label">Compliance:</span>
+                        <span class="param-value" id="paramCompliance">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="btn btn-secondary" id="prevBtn" onclick="navigatePrev()">← Previous</button>
+                <button class="btn btn-primary" id="nextBtn" onclick="navigateNext()">Next →</button>
+                <button class="btn btn-success" onclick="exportAnnotations()">Export Annotations</button>
+                <button class="btn btn-secondary" onclick="clearAllAnnotations()" style="background: #f44336;">Clear All Data</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="form-content" id="formContent">
+                <div class="loading">Loading forms...</div>
+            </div>
+
+            <div class="annotations">
+                <h2>Annotations</h2>
+
+                <!-- Saved Annotations List -->
+                <div class="annotations-list-section">
+                    <h3>Saved Annotations <span class="annotation-count" id="annotationCount">0</span></h3>
+                    <div class="annotations-list" id="annotationsList">
+                        <div class="no-annotations">No annotations yet. Add one below.</div>
+                    </div>
+                </div>
+
+                <!-- Current Selection Display -->
+                <div class="current-selection" id="currentSelection">
+                    <h3>Current Selection</h3>
+                    <div class="current-selection-content" id="selectionContent">
+                        <span class="no-selection">Nothing selected (select one: error tag, form item, or add comment)</span>
+                    </div>
+                </div>
+
+                <!-- Add New Annotation Section -->
+                <div class="add-annotation-section">
+                    <h3>Add New Annotation</h3>
+                    <div class="error-types" id="errorTypes"></div>
+                    <textarea class="notes-area" id="notesArea" placeholder="Or add a text comment..."></textarea>
+                    <div class="action-buttons">
+                        <button class="btn btn-success" id="addBtn" onclick="addAnnotation()" disabled>Add Annotation</button>
+                        <button class="btn btn-secondary" id="clearBtn" onclick="clearSelection()" disabled>Clear Selection</button>
+                        <span class="save-indicator" id="saveIndicator">Added!</span>
+                    </div>
+                </div>
+
+                <div class="shortcuts">
+                    <strong>Tip:</strong> You can combine any of these: click form item + select error tag + add comment. They will save as one annotation. You can also add multiple annotations to the same form item.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Export Format Modal -->
+    <div class="modal-overlay" id="exportModal" onclick="closeExportModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <h3>Export Annotations</h3>
+            <div class="modal-content">
+                <div class="format-option selected" onclick="selectFormat('json')">
+                    <input type="radio" name="format" value="json" id="formatJSON" checked>
+                    <div class="format-option-content">
+                        <div class="format-option-title">JSON Format</div>
+                        <div class="format-option-desc">Full structured data, perfect for backup and re-import</div>
+                    </div>
+                </div>
+                <div class="format-option" onclick="selectFormat('csv')">
+                    <input type="radio" name="format" value="csv" id="formatCSV">
+                    <div class="format-option-content">
+                        <div class="format-option-title">CSV Format</div>
+                        <div class="format-option-desc">Spreadsheet-ready, opens in Excel/Google Sheets</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closeExportModal()">Cancel</button>
+                <button class="btn btn-success" onclick="confirmExport()">Export</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // State
+        let forms = [];
+        let currentIndex = 0;
+        let annotations = {}; // { filename: [ {formItem, errorTag, comment, timestamp}, ... ] }
+        let currentSelection = {
+            formItem: null,    // { itemIndex, itemName, value }
+            errorTag: null,    // string
+            comment: null      // string
+        };
+        
+        const errorTypesList = [
+            'Missing Item',
+            'Wrong Terminology',
+            'Incorrect Organization',
+            'Trailer Rule Violation',
+            'Regulatory Non-Compliance',
+            'Maintenance Logic Error',
+            'Excessive Detail',
+            'Insufficient Detail',
+            'Custom'
+        ];
+        
+        // Initialize
+        async function init() {
+            loadAnnotationsFromStorage();
+            await loadForms();
+            renderErrorTypes();
+            renderCurrentForm();
+            setupKeyboardShortcuts();
+            document.getElementById('notesArea').addEventListener('input', handleCommentInput);
+        }
+        
+        // Load all JSON forms
+        async function loadForms() {
+            const formFiles = [
+                'chevrolet_silverado_maintenance_extended_compliance.json',
+                'chevrolet_silverado_no_maintenance_extended_compliance.json',
+                'chevrolet_silverado_no_maintenance_min_compliance.json',
+                'chevy_silverado_maintenance_extended_compliance.json',
+                'chevy_silverado_maintenance_min_compliance.json',
+                'skoda_kamiq_maintenance_extended_compliance.json',
+                'skoda_kamiq_maintenance_min_compliance.json'
+            ];
+        
+            for (const filename of formFiles) {
+                try {
+                    const response = await fetch(`outputs/${filename}`);
+                    const data = await response.json();
+                    forms.push({
+                        filename,
+                        data,
+                        parameters: parseFilename(filename)
+                    });
+                } catch (error) {
+                    console.error(`Failed to load ${filename}:`, error);
+                }
+            }
+        
+            updateProgress();
+        }
+        
+        // Parse filename to extract parameters
+        function parseFilename(filename) {
+            const parts = filename.replace('.json', '').split('_');
+            let vehicleType = '';
+            let startIdx = 0;
+        
+            if (parts[0] === 'skoda' || parts[0] === 'chevrolet' || parts[0] === 'chevy') {
+                vehicleType = parts[0] + ' ' + parts[1];
+                startIdx = 2;
+            }
+        
+            vehicleType = vehicleType.split(' ')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ');
+        
+            const hasMaintenance = !parts.includes('no');
+            const complianceLevel = parts.includes('min') ? 'minimum' : 'extended';
+        
+            return {
+                vehicleType,
+                maintenance: hasMaintenance ? 'yes' : 'no',
+                complianceLevel
+            };
+        }
+        
+        // Render current form
+        function renderCurrentForm() {
+            if (forms.length === 0) {
+                document.getElementById('formContent').innerHTML = '<div class="error-message">No forms found</div>';
+                return;
+            }
+        
+            const form = forms[currentIndex];
+            const params = form.parameters;
+        
+            // Update parameters panel
+            document.getElementById('paramFilename').textContent = form.filename;
+            document.getElementById('paramVehicle').innerHTML = `<span class="badge badge-info">${params.vehicleType}</span>`;
+            document.getElementById('paramMaintenance').innerHTML =
+                `<span class="badge ${params.maintenance === 'yes' ? 'badge-success' : 'badge-warning'}">${params.maintenance}</span>`;
+            document.getElementById('paramCompliance').innerHTML =
+                `<span class="badge ${params.complianceLevel === 'extended' ? 'badge-info' : 'badge-warning'}">${params.complianceLevel}</span>`;
+        
+            // Render form content
+            const content = document.getElementById('formContent');
+            const items = form.data.Items || [];
+        
+            let html = `
+                <div class="form-header">
+                    <div class="form-name">${form.data.Name || 'Untitled Form'}</div>
+                    <div class="form-description">${form.data.Description || ''}</div>
+                </div>
+                <div class="item-count">${items.length} inspection items</div>
+                <div class="form-items">
+            `;
+        
+            items.forEach((item, index) => {
+                const itemClass = item.ValueType === 'Photo' ? 'photo' : item.ValueType === 'Text' ? 'text' : '';
+                html += `
+                    <div class="form-item ${itemClass}" data-item-index="${index}" onclick="selectFormItem(${index})">
+                        <span class="tag-indicator">TAGGED</span>
+                        <div class="item-header">
+                            <span class="item-name">${index + 1}. ${item.Name}</span>
+                            ${item.RequireValue ? '<span class="item-required">REQUIRED</span>' : ''}
+                            <span class="item-type">${item.ValueType}</span>
+                        </div>
+                        ${item.Comment ? `<div class="item-comment">${item.Comment}</div>` : ''}
+                    </div>
+                `;
+            });
+        
+            html += '</div>';
+            content.innerHTML = html;
+        
+            // Load annotations and update UI
+            renderAnnotationsList();
+            updateFormItemsHighlight();
+            clearSelection();
+            updateProgress();
+        }
+        
+        // Render error type tags
+        function renderErrorTypes() {
+            const container = document.getElementById('errorTypes');
+            container.innerHTML = errorTypesList.map(type =>
+                `<div class="error-tag" data-type="${type}" onclick="selectErrorTag('${type}')">${type}</div>`
+            ).join('');
+        }
+        
+        // Select error tag (toggle single error tag)
+        function selectErrorTag(type) {
+            const wasSelected = document.querySelector(`[data-type="${type}"]`).classList.contains('selected');
+
+            // Clear all error tag selections (only one error tag at a time)
+            document.querySelectorAll('.error-tag').forEach(tag => tag.classList.remove('selected'));
+
+            if (wasSelected) {
+                // Deselect - remove error tag from selection
+                currentSelection.errorTag = null;
+            } else {
+                // Select this tag - add to current selection
+                document.querySelector(`[data-type="${type}"]`).classList.add('selected');
+                currentSelection.errorTag = type;
+            }
+
+            updateSelectionDisplay();
+            updateButtonStates();
+        }
+        
+        // Select form item (toggle)
+        function selectFormItem(itemIndex) {
+            const form = forms[currentIndex];
+            const item = form.data.Items[itemIndex];
+
+            // Toggle selection
+            if (currentSelection.formItem && currentSelection.formItem.itemIndex === itemIndex) {
+                // Deselect - remove form item from selection
+                currentSelection.formItem = null;
+            } else {
+                // Select - add to current selection
+                currentSelection.formItem = {
+                    itemIndex: itemIndex,
+                    itemName: item.Name,
+                    itemType: item.ValueType,
+                    value: `${item.Name} (${item.ValueType})`
+                };
+            }
+
+            updateSelectionDisplay();
+            updateButtonStates();
+        }
+        
+        // Handle comment input
+        function handleCommentInput() {
+            const text = document.getElementById('notesArea').value.trim();
+
+            // Add or remove comment from selection
+            if (text.length > 0) {
+                currentSelection.comment = text;
+            } else {
+                currentSelection.comment = null;
+            }
+
+            updateSelectionDisplay();
+            updateButtonStates();
+        }
+        
+        // Update selection display
+        function updateSelectionDisplay() {
+            const container = document.getElementById('selectionContent');
+
+            const hasFormItem = currentSelection.formItem !== null;
+            const hasErrorTag = currentSelection.errorTag !== null;
+            const hasComment = currentSelection.comment !== null;
+            const hasAnySelection = hasFormItem || hasErrorTag || hasComment;
+
+            if (!hasAnySelection) {
+                container.innerHTML = '<span class="no-selection">Nothing selected (select any combination: form item, error tag, and/or comment)</span>';
+                return;
+            }
+
+            let parts = [];
+
+            if (hasFormItem) {
+                parts.push(`<span class="annotation-type-badge tagged-item-type">Form Item</span> #${currentSelection.formItem.itemIndex + 1}: ${currentSelection.formItem.itemName}`);
+            }
+
+            if (hasErrorTag) {
+                parts.push(`<span class="annotation-type-badge error-tag-type">Error Tag</span> ${currentSelection.errorTag}`);
+            }
+
+            if (hasComment) {
+                const displayComment = currentSelection.comment.substring(0, 50);
+                const ellipsis = currentSelection.comment.length > 50 ? '...' : '';
+                parts.push(`<span class="annotation-type-badge comment-type">Comment</span> ${displayComment}${ellipsis}`);
+            }
+
+            container.innerHTML = parts.join('<br><br>');
+        }
+        
+        // Update button states
+        function updateButtonStates() {
+            const hasAnySelection = currentSelection.formItem !== null ||
+                                   currentSelection.errorTag !== null ||
+                                   currentSelection.comment !== null;
+
+            document.getElementById('addBtn').disabled = !hasAnySelection;
+            document.getElementById('clearBtn').disabled = !hasAnySelection;
+        }
+        
+        // Add annotation
+        function addAnnotation() {
+            const hasAnySelection = currentSelection.formItem !== null ||
+                                   currentSelection.errorTag !== null ||
+                                   currentSelection.comment !== null;
+
+            if (!hasAnySelection) return;
+
+            const form = forms[currentIndex];
+            const filename = form.filename;
+
+            // Initialize annotations array for this form if needed
+            if (!annotations[filename]) {
+                annotations[filename] = [];
+            }
+
+            // Create annotation object with all selected components
+            const annotation = {
+                formItem: currentSelection.formItem ? {
+                    itemIndex: currentSelection.formItem.itemIndex,
+                    itemName: currentSelection.formItem.itemName,
+                    itemType: currentSelection.formItem.itemType
+                } : null,
+                errorTag: currentSelection.errorTag || null,
+                comment: currentSelection.comment || null,
+                timestamp: new Date().toISOString()
+            };
+
+            // Add to annotations
+            annotations[filename].push(annotation);
+
+            // Save to localStorage
+            localStorage.setItem('dvir_annotations', JSON.stringify(annotations));
+
+            // Show indicator
+            const indicator = document.getElementById('saveIndicator');
+            indicator.classList.add('show');
+            setTimeout(() => indicator.classList.remove('show'), 2000);
+
+            // Update UI
+            renderAnnotationsList();
+            updateFormItemsHighlight();
+            clearSelection();
+            updateProgress();
+        }
+        
+        // Clear selection
+        function clearSelection() {
+            currentSelection = {
+                formItem: null,
+                errorTag: null,
+                comment: null
+            };
+            document.querySelectorAll('.error-tag').forEach(tag => tag.classList.remove('selected'));
+            document.getElementById('notesArea').value = '';
+            updateSelectionDisplay();
+            updateButtonStates();
+        }
+        
+        // Delete annotation
+        function deleteAnnotation(index) {
+            const form = forms[currentIndex];
+            const filename = form.filename;
+        
+            if (annotations[filename]) {
+                annotations[filename].splice(index, 1);
+        
+                // Remove empty arrays
+                if (annotations[filename].length === 0) {
+                    delete annotations[filename];
+                }
+        
+                // Save to localStorage
+                localStorage.setItem('dvir_annotations', JSON.stringify(annotations));
+        
+                // Update UI
+                renderAnnotationsList();
+                updateFormItemsHighlight();
+                updateProgress();
+            }
+        }
+        
+        // Render annotations list
+        function renderAnnotationsList() {
+            const form = forms[currentIndex];
+            const filename = form.filename;
+            const formAnnotations = annotations[filename] || [];
+
+            const countEl = document.getElementById('annotationCount');
+            const listEl = document.getElementById('annotationsList');
+
+            countEl.textContent = formAnnotations.length;
+
+            if (formAnnotations.length === 0) {
+                listEl.innerHTML = '<div class="no-annotations">No annotations yet. Add one below.</div>';
+                return;
+            }
+
+            let html = '';
+            formAnnotations.forEach((ann, index) => {
+                let parts = [];
+
+                // Build annotation display from components
+                if (ann.formItem) {
+                    parts.push(`<div><span class="annotation-type-badge tagged-item-type">Form Item</span> #${ann.formItem.itemIndex + 1}: ${ann.formItem.itemName} (${ann.formItem.itemType})</div>`);
+                }
+
+                if (ann.errorTag) {
+                    parts.push(`<div style="margin-top: 4px;"><span class="annotation-type-badge error-tag-type">Error Tag</span> ${ann.errorTag}</div>`);
+                }
+
+                if (ann.comment) {
+                    parts.push(`<div style="margin-top: 4px;"><span class="annotation-type-badge comment-type">Comment</span> ${ann.comment}</div>`);
+                }
+
+                html += `
+                    <div class="annotation-item">
+                        <div class="annotation-content" style="flex: 1;">
+                            ${parts.join('')}
+                        </div>
+                        <button class="annotation-delete" onclick="deleteAnnotation(${index})" title="Delete">×</button>
+                    </div>
+                `;
+            });
+
+            listEl.innerHTML = html;
+        }
+        
+        // Update form items highlight (yellow for tagged items with count)
+        function updateFormItemsHighlight() {
+            const form = forms[currentIndex];
+            const filename = form.filename;
+            const formAnnotations = annotations[filename] || [];
+
+            // Count annotations per item
+            const annotationCounts = {};
+            formAnnotations.forEach(ann => {
+                if (ann.formItem) {
+                    const idx = ann.formItem.itemIndex;
+                    annotationCounts[idx] = (annotationCounts[idx] || 0) + 1;
+                }
+            });
+
+            // Update UI
+            const formItems = document.querySelectorAll('.form-item');
+            formItems.forEach((itemEl, index) => {
+                const count = annotationCounts[index] || 0;
+                const tagIndicator = itemEl.querySelector('.tag-indicator');
+
+                if (count > 0) {
+                    itemEl.classList.add('tagged');
+                    if (count === 1) {
+                        tagIndicator.textContent = 'TAGGED';
+                    } else {
+                        tagIndicator.textContent = `${count} ANNOTATIONS`;
+                    }
+                } else {
+                    itemEl.classList.remove('tagged');
+                    tagIndicator.textContent = 'TAGGED';
+                }
+            });
+        }
+        
+        // Load annotations from localStorage
+        function loadAnnotationsFromStorage() {
+            const stored = localStorage.getItem('dvir_annotations');
+            if (stored) {
+                try {
+                    annotations = JSON.parse(stored);
+                } catch (e) {
+                    console.error('Failed to parse annotations:', e);
+                    annotations = {};
+                }
+            }
+        }
+        
+        // Export annotations - show modal
+        function exportAnnotations() {
+            if (Object.keys(annotations).length === 0) {
+                alert('No annotations to export. Please add annotations first.');
+                return;
+            }
+
+            // Show export modal
+            document.getElementById('exportModal').classList.add('show');
+        }
+
+        // Select format in modal
+        function selectFormat(format) {
+            // Remove selected class from all options
+            document.querySelectorAll('.format-option').forEach(opt => opt.classList.remove('selected'));
+
+            // Add selected class to clicked option
+            const option = format === 'json'
+                ? document.querySelector('.format-option:first-child')
+                : document.querySelector('.format-option:last-child');
+            option.classList.add('selected');
+
+            // Check the radio button
+            document.getElementById(`format${format.toUpperCase()}`).checked = true;
+        }
+
+        // Close export modal
+        function closeExportModal() {
+            document.getElementById('exportModal').classList.remove('show');
+        }
+
+        // Confirm export
+        function confirmExport() {
+            const format = document.querySelector('input[name="format"]:checked').value;
+            const timestamp = new Date().toISOString().split('T')[0];
+
+            closeExportModal();
+
+            if (format === 'json') {
+                exportAsJSON(timestamp);
+            } else {
+                exportAsCSV(timestamp);
+            }
+        }
+
+        // Export as JSON
+        function exportAsJSON(timestamp) {
+            const dataStr = JSON.stringify(annotations, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `annotations_${timestamp}.json`;
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Export as CSV
+        function exportAsCSV(timestamp) {
+            // CSV Headers
+            const headers = ['Filename', 'Form Item Index', 'Form Item Name', 'Form Item Type', 'Error Tag', 'Comment', 'Timestamp'];
+            let csvContent = headers.join(',') + '\n';
+
+            // Process each form's annotations
+            for (const [filename, formAnnotations] of Object.entries(annotations)) {
+                formAnnotations.forEach(ann => {
+                    const row = [
+                        `"${filename}"`,
+                        ann.formItem ? ann.formItem.itemIndex : '',
+                        ann.formItem ? `"${ann.formItem.itemName}"` : '',
+                        ann.formItem ? `"${ann.formItem.itemType}"` : '',
+                        ann.errorTag ? `"${ann.errorTag}"` : '',
+                        ann.comment ? `"${ann.comment.replace(/"/g, '""')}"` : '', // Escape quotes in comments
+                        `"${ann.timestamp}"`
+                    ];
+                    csvContent += row.join(',') + '\n';
+                });
+            }
+
+            // Create and download CSV file
+            const dataBlob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `annotations_${timestamp}.csv`;
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Clear all annotations from memory
+        function clearAllAnnotations() {
+            if (Object.keys(annotations).length === 0) {
+                alert('No data to clear. The memory is already empty.');
+                return;
+            }
+
+            const totalAnnotations = Object.values(annotations).reduce((sum, arr) => sum + arr.length, 0);
+            const formsWithAnnotations = Object.keys(annotations).length;
+
+            if (confirm(`Are you sure you want to clear ALL annotations?\n\nThis will delete:\n• ${totalAnnotations} total annotations\n• From ${formsWithAnnotations} forms\n\nThis action cannot be undone!`)) {
+                // Clear annotations object
+                annotations = {};
+
+                // Clear localStorage
+                localStorage.removeItem('dvir_annotations');
+
+                // Update UI
+                renderAnnotationsList();
+                updateFormItemsHighlight();
+                clearSelection();
+                updateProgress();
+
+                alert('All annotations have been cleared successfully!');
+            }
+        }
+        
+        // Navigation
+        function navigatePrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderCurrentForm();
+            }
+        }
+        
+        function navigateNext() {
+            if (currentIndex < forms.length - 1) {
+                currentIndex++;
+                renderCurrentForm();
+            }
+        }
+        
+        // Update progress
+        function updateProgress() {
+            const total = forms.length;
+            const current = currentIndex + 1;
+            const reviewedCount = Object.keys(annotations).length;
+            const reviewedPercent = total > 0 ? Math.round((reviewedCount / total) * 100) : 0;
+
+            document.getElementById('progressText').textContent =
+                `Form ${current}/${total} • ${reviewedCount} reviewed (${reviewedPercent}%)`;
+
+            // Progress bar shows review completion, not navigation position
+            document.getElementById('progressFill').style.width = `${reviewedPercent}%`;
+
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = currentIndex === 0;
+            document.getElementById('nextBtn').disabled = currentIndex === total - 1;
+        }
+        
+        // Keyboard shortcuts
+        function setupKeyboardShortcuts() {
+            document.addEventListener('keydown', (e) => {
+                if (e.target.tagName === 'TEXTAREA') return;
+        
+                if (e.key === 'ArrowLeft') {
+                    navigatePrev();
+                } else if (e.key === 'ArrowRight') {
+                    navigateNext();
+                } else if (e.key === 's' || e.key === 'S') {
+                    e.preventDefault();
+                    if (!document.getElementById('addBtn').disabled) {
+                        addAnnotation();
+                    }
+                }
+            });
+        }
+        
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

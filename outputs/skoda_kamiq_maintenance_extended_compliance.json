@@ -1,0 +1,420 @@
+{
+  "Name": "DVIR Form: Skoda Kamiq",
+  "Description": "Driver Vehicle Inspection Report for Skoda Kamiq with Extended Compliance and Preventive Maintenance Checks",
+  "Items": [
+    {
+      "Name": "Headlights - Main Beams (both functional)",
+      "Comment": "Test low and high beam operation",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Headlights - Lens Condition (no cracks)",
+      "Comment": "Check for damage or discoloration",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tail Lights and Brake Lights (both sides)",
+      "Comment": "Test all lights functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Turn Signals - All Directions (front and rear)",
+      "Comment": "Test left, right, and hazard lights",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Reflectors and Amber Warning Lights (visible)",
+      "Comment": "Check for damage or dirt",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windshield Wipers - Blade Condition (both)",
+      "Comment": "Check for wear, streaking, or missing sections",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windshield Washer Function (sprays adequately)",
+      "Comment": "Test operation and fluid level",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Exterior Mirrors - Driver and Passenger (intact)",
+      "Comment": "Check mounting, glass, and rotation",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Horn (operational and audible)",
+      "Comment": "Test sound level and clarity",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tire Pressure - All Positions (PSI within spec)",
+      "Comment": "Include spare tire if equipped",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tire Tread Wear Pattern (adequate depth)",
+      "Comment": "Check center and edge wear evenly",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tire Damage - Punctures / Cuts / Gouges (none visible)",
+      "Comment": "Inspect sidewalls for embedded objects",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tire Bulges / Bubbles / Cracking (none present)",
+      "Comment": "Check entire tire surface for deformation",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Wheels and Rims (no cracks or bends)",
+      "Comment": "Inspect for damage or corrosion",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Lug Nuts / Bolts (all present and tight)",
+      "Comment": "Verify security on all wheels",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Valve Caps and Stems (present and intact)",
+      "Comment": "Check for damage or leaks",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windshield and Windows (no cracks)",
+      "Comment": "Check visibility is unobstructed",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windshield Condition - Safety (impacts safe operation)",
+      "Comment": "Assess size and location of damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Body Paint and Finish (general condition)",
+      "Comment": "Note rust, dents, or missing trim",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Doors and Door Handles (operational)",
+      "Comment": "Test opening, closing, and locking",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Door Locks and Latches (secure)",
+      "Comment": "Verify no rattling or loose movement",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windows - Operation and Seals (functional)",
+      "Comment": "Check for water leaks or binding",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Grille and Bumper (no damage)",
+      "Comment": "Check for cracks or loose parts",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Service Brakes - Pedal Feel (firm response)",
+      "Comment": "Test braking performance and responsiveness",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Service Brakes - Brake Line Leaks (none visible)",
+      "Comment": "Check under vehicle for fluid seepage",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Parking Brake (holds vehicle on grade)",
+      "Comment": "Test engagement and disengagement",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Steering Mechanism - Wheel Play (minimal)",
+      "Comment": "Check for excessive movement before tires turn",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Steering - Power Assist (functional)",
+      "Comment": "Verify smooth steering response",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Steering Fluid Leaks (none visible)",
+      "Comment": "Inspect hoses and connections",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Seatbelts - All Positions (functional and secure)",
+      "Comment": "Test retraction and locking mechanism",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Seatbelts - Condition and Wear (not frayed)",
+      "Comment": "Check for damage or deterioration",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Safety Glass Condition (in place)",
+      "Comment": "Ensure no delamination or separation",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Interior Lights - All Functions (operational)",
+      "Comment": "Test dome, map, and warning lights",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Dashboard Warning Lights (note any active)",
+      "Comment": "Identify which warnings are illuminated",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Instrument Gauges (all functional)",
+      "Comment": "Verify speedometer, fuel, temperature, oil pressure",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Fuel Level (adequate for operation)",
+      "Comment": "Ensure sufficient fuel for route",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Engine Oil Level (proper level on dipstick)",
+      "Comment": "Check when engine is cold, top up if needed",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Coolant Level (within min-max range)",
+      "Comment": "Check when engine is cold",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Brake Fluid Level (within range)",
+      "Comment": "Should be between minimum and maximum marks",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Power Steering Fluid (adequate level)",
+      "Comment": "Check reservoir when engine is off",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windshield Washer Fluid (filled)",
+      "Comment": "Ensure adequate supply for visibility",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Engine Belts - Serpentine Belt (no cracks)",
+      "Comment": "Check for fraying, cracking, or excessive wear",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Engine Belts - Tension (proper engagement)",
+      "Comment": "Verify no slipping or misalignment",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Radiator and Heater Hoses (no leaks or cracks)",
+      "Comment": "Check connections and general condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Hose Clamps (tight and secure)",
+      "Comment": "Verify all clamps are properly fastened",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Battery - Terminals (clean, no corrosion)",
+      "Comment": "Check for white, blue, or green buildup",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Battery - Connections (tight and secure)",
+      "Comment": "Verify posts are properly tightened",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Battery - Case (no cracks or leaks)",
+      "Comment": "Inspect for physical damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Air Cleaner Filter (condition and flow)",
+      "Comment": "Check if filter needs replacement",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Engine Compartment Leaks (none visible)",
+      "Comment": "Check under engine and transmission",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Exhaust System - Visible Leaks (none present)",
+      "Comment": "Inspect manifold, pipes, and muffler connections",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Exhaust System - Hanging Parts (secured)",
+      "Comment": "Check for loose or dragging components",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Undercarriage - Oil / Fluid Drips (none present)",
+      "Comment": "Visible from ground level inspection",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Frame and Suspension - Visible Damage (none)",
+      "Comment": "Look for bends, cracks, or deterioration",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Shock Absorbers - Leaks (none visible)",
+      "Comment": "Check for fluid seepage on shocks",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Brake Hoses - Under Vehicle (no leaks)",
+      "Comment": "Inspect for cracks or seeping fluid",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Unusual Noises During Operation (none detected)",
+      "Comment": "Test during start and brief drive if safe",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Unusual Vibrations (none present)",
+      "Comment": "Note steering, brake pedal, or seat vibrations",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Climate Control - Heating (functional)",
+      "Comment": "Test warm air output",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Climate Control - Air Conditioning (functional)",
+      "Comment": "Test cold air output and compressor",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Ventilation System (no odors)",
+      "Comment": "Note any musty or burnt smells",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Emergency Equipment - Fire Extinguisher (present)",
+      "Comment": "Verify accessibility and charging",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Emergency Equipment - Warning Triangles (present)",
+      "Comment": "Check for presence and condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "First Aid Kit (present and accessible)",
+      "Comment": "Check contents are not expired",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Front Photo",
+      "Comment": "Take photo of vehicle front end",
+      "RequireValue": true,
+      "ValueType": "Photo"
+    },
+    {
+      "Name": "Right Side Photo",
+      "Comment": "Take photo of passenger side",
+      "RequireValue": true,
+      "ValueType": "Photo"
+    },
+    {
+      "Name": "Back Photo",
+      "Comment": "Take photo of vehicle rear",
+      "RequireValue": true,
+      "ValueType": "Photo"
+    },
+    {
+      "Name": "Left Side Photo",
+      "Comment": "Take photo of driver side",
+      "RequireValue": true,
+      "ValueType": "Photo"
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "Record any concerns, defects, or maintenance observations",
+      "RequireValue": false,
+      "ValueType": "Text"
+    }
+  ]
+}

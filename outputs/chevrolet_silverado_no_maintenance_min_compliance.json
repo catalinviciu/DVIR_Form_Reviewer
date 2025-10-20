@@ -1,0 +1,204 @@
+{
+  "Name": "DVIR Form: Chevrolet Silverado",
+  "Description": "Driver Vehicle Inspection Report for Chevrolet Silverado - Minimum Compliance, Safety Inspection Only",
+  "Items": [
+    {
+      "Name": "Headlights (both)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Brake Lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Turn Signals",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Backup Lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Reflectors",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tire Pressure (all)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tire Tread Depth",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tire Damage/Wear",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Wheels and Rims",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Lug Nuts (secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windshield Condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Windshield Wipers",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Rearview Mirror",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Side Mirrors (both)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Horn",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Service Brakes (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Parking Brake",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Brake Pedal Feel",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Brake Lines/Hoses",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Steering (play/damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Seatbelts",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Doors (locks/operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Under Vehicle Leaks",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Exhaust System",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Frame/Suspension (visible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Glass/Windows",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Body Damage",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Tailgate (pickup)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Instrument Cluster/Gauges",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Warning Lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Vehicle Fluid Leaks (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Unusual Noises/Vibrations",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox"
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "Note any defects or concerns",
+      "RequireValue": false,
+      "ValueType": "Text"
+    }
+  ]
+}
