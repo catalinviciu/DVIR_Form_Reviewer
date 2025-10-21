@@ -1,0 +1,474 @@
+{
+  "Name": "DVIR Form: Trailer Inspection",
+  "Description": "Driver Vehicle Inspection Report for trailers with extended compliance level and preventive maintenance checks",
+  "Items": [
+    {
+      "Name": "Walkaround Front Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Walkaround Right Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Walkaround Rear Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Walkaround Left Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Headlights (operational)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Tail Lights (operational)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Turn Signals (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Brake Lights (operational)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Marker Lights (clearance lights)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Reflectors (front / rear / sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reflectors"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Reflective Tape (condition / intact)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reflectors"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Body Condition (dents / damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Weather Stripping (door seals)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Paint / Coating (rust / peeling)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Kingpin and Coupler (condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Safety Chains / Cables (secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Landing Gear (extends smoothly)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Landing Gear"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Landing Gear (retracts fully)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Landing Gear"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Landing Gear (locked in position)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Landing Gear"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Tire Tread Depth (adequate 2/32)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Tire Pressure (all tires correct)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Tire Condition (punctures / cuts)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Wheels and Rims (condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Wheels"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Lug Nuts (tight and secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Wheels"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Brake Lines (intact no cracks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Air Line Connections (glad hands)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Brake System (no visible leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Emergency Brake (operational)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Frame and Structure (integrity)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Frame"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Suspension System (condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Suspension"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Axles and Bearings (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Suspension"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Under Vehicle (no visible leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Undercarriage (damage / rust)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 32
+    },
+    {
+      "Name": "Cargo Doors (operation smooth)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cargo Area"
+      ],
+      "Position": 33
+    },
+    {
+      "Name": "Door Seals and Gaskets (intact)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cargo Area"
+      ],
+      "Position": 34
+    },
+    {
+      "Name": "Door Hinges and Latches (secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cargo Area"
+      ],
+      "Position": 35
+    },
+    {
+      "Name": "Floor Condition (no holes damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cargo Area"
+      ],
+      "Position": 36
+    },
+    {
+      "Name": "Roof / Top Structure (intact)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cargo Area"
+      ],
+      "Position": 37
+    },
+    {
+      "Name": "Side Panels (condition secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cargo Area"
+      ],
+      "Position": 38
+    },
+    {
+      "Name": "Mud Flaps (present and secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 39
+    },
+    {
+      "Name": "Rear Underride Guard (secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 40
+    },
+    {
+      "Name": "Brake Fluid Leaks (check lines)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 41
+    },
+    {
+      "Name": "General Undercarriage Leaks",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 42
+    },
+    {
+      "Name": "Visible Rust or Corrosion",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 43
+    },
+    {
+      "Name": "Coupling Area Lubrication",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 44
+    },
+    {
+      "Name": "Overall Trailer Condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 45
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 46
+    }
+  ]
+}

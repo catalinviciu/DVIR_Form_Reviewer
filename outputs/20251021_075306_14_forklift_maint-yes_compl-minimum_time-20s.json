@@ -1,0 +1,204 @@
+{
+  "Name": "DVIR Form: Forklift Inspection",
+  "Description": "Driver Vehicle Inspection Report for Forklift with Preventive Maintenance Checks and Minimum Compliance Level",
+  "Items": [
+    {
+      "Name": "Frame (structural integrity)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Forks (cracks, straightness, damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Overhead Guard (intact, no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Load Backrest (intact, properly attached)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Mast Operation (raises and lowers)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Tilt Mechanism (forward and backward)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Load Test (visual verification)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Seat and Seat Belt (condition, secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Steering (responsive, no excessive play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Horn (audible and functioning)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Emergency Stop Button (accessible, functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Tires (condition, pressure, no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Wheels and Rims (intact, no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Brakes (responsive, no unusual sounds)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Hydraulic Lines (no visible leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Hydraulic Fluid Level (adequate)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Fuel / Battery Level (adequate charge)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Unusual Noises or Vibrations (noted)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Visible Leaks (engine oil, hydraulic, fuel)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 19
+    }
+  ]
+}

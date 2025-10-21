@@ -1,0 +1,234 @@
+{
+  "Name": "DVIR Form: Passenger Car",
+  "Description": "Driver Vehicle Inspection Report for Passenger Vehicles with Maintenance Checks and Minimum Compliance",
+  "Items": [
+    {
+      "Name": "Lights (all functional)",
+      "Comment": "Headlights, taillights, turn signals, brake lights",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Windshield and Wipers (condition)",
+      "Comment": "Check for cracks, chips, and wiper operation",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Mirrors (rear and side)",
+      "Comment": "Check for damage and functionality",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Tires (pressure and condition)",
+      "Comment": "Check pressure, tread depth, and for damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Wheels and Rims (no damage)",
+      "Comment": "Check for cracks, rust, or looseness",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Leaks Under Vehicle (check for)",
+      "Comment": "Oil, coolant, brake fluid, transmission fluid",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Exhaust System (intact)",
+      "Comment": "Check for damage or excessive rust",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Seat Belts (operational)",
+      "Comment": "All seat belts engage and retract properly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Brakes (parking and service)",
+      "Comment": "Check parking brake and service brake responsiveness",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Steering Wheel (responsive)",
+      "Comment": "Check for excessive play or stiffness",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Horn (functional)",
+      "Comment": "Test horn operation",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Dashboard Warning Lights (check)",
+      "Comment": "No warning lights illuminated during start-up",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Engine Oil Level (proper)",
+      "Comment": "Check with dipstick or electronic gauge",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Coolant Level (proper)",
+      "Comment": "Check when engine is cold",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Brake Fluid Level (proper)",
+      "Comment": "Check reservoir level",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Battery Condition (terminals)",
+      "Comment": "Check for corrosion and loose connections",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Belts and Hoses (condition)",
+      "Comment": "Check for cracks, fraying, or leaks",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Unusual Noises (during operation)",
+      "Comment": "Listen for grinding, squeaking, or rattling",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Unusual Vibrations (during operation)",
+      "Comment": "Check steering wheel, brake pedal, and seat",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Air Filter (accessible)",
+      "Comment": "Check condition if visible",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Brake System Response (normal)",
+      "Comment": "Brakes should engage smoothly without delay",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Steering Responsiveness (normal)",
+      "Comment": "Vehicle should respond immediately to steering input",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 22
+    }
+  ]
+}

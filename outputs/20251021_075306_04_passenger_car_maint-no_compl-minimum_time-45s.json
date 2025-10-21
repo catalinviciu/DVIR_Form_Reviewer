@@ -1,0 +1,176 @@
+{
+  "Name": "DVIR Form: Passenger Car - Minimum Compliance",
+  "Description": "Driver Vehicle Inspection Report for Passenger Car with minimum compliance requirements (safety inspection items only, no maintenance checks)",
+  "Items": [
+    {
+      "Name": "Headlights (both beams)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Tail Lights (rear illumination)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Brake Lights (test function)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Turn Signals (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Reflectors (rear/side visible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Rear View Mirror (clear)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Side Mirrors (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Windshield (clear/safe)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Windows (clear visibility)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Windshield Wipers (function)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Horn (audible/functioning)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Tires (tread/pressure/damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Wheels and Rims (damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Service Brakes (test function)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Parking Brake (engagement)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Steering Wheel (no play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Seatbelts (all seats)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 16
+    }
+  ]
+}

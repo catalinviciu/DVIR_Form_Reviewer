@@ -858,53 +858,86 @@
         
         // Load all JSON forms
         async function loadForms() {
-            const formFiles = [
-                'chevrolet_silverado_dvir_maintenance.json',
-                'chevrolet_silverado_dvir_no_maintenance.json',
-                'chevrolet_silverado_dvir_min_maintenance.json',
-                'chevrolet_silverado_dvir_min_no_maintenance.json'
-            ];
-        
-            for (const filename of formFiles) {
-                try {
-                    const response = await fetch(`outputs/${filename}`);
-                    const data = await response.json();
-                    forms.push({
-                        filename,
-                        data,
-                        parameters: parseFilename(filename)
-                    });
-                } catch (error) {
-                    console.error(`Failed to load ${filename}:`, error);
+            try {
+                // Load manifest file
+                const manifestResponse = await fetch('outputs/manifest.json');
+                const manifest = await manifestResponse.json();
+                const formFiles = manifest.files.filter(f => f !== 'manifest.json');
+
+                for (const filename of formFiles) {
+                    try {
+                        const response = await fetch(`outputs/${filename}`);
+                        const data = await response.json();
+                        forms.push({
+                            filename,
+                            data,
+                            parameters: parseFilename(filename)
+                        });
+                    } catch (error) {
+                        console.error(`Failed to load ${filename}:`, error);
+                    }
                 }
+            } catch (error) {
+                console.error('Failed to load manifest:', error);
             }
-        
+
             updateProgress();
         }
         
         // Parse filename to extract parameters
         function parseFilename(filename) {
-            const parts = filename.replace('.json', '').split('_');
-            let vehicleType = '';
-            let startIdx = 0;
-        
-            if (parts[0] === 'skoda' || parts[0] === 'chevrolet' || parts[0] === 'chevy') {
-                vehicleType = parts[0] + ' ' + parts[1];
-                startIdx = 2;
+            const cleanName = filename.replace('.json', '');
+
+            // Check if new format (starts with timestamp)
+            if (/^\d{8}_\d{6}_\d{2}_/.test(cleanName)) {
+                // New format: 20251021_075306_01_passenger_car_maint-yes_compl-extended_time-39s
+                const parts = cleanName.split('_');
+
+                // Find indices of maint and compl parts
+                let maintIdx = parts.findIndex(p => p.startsWith('maint-'));
+                let complIdx = parts.findIndex(p => p.startsWith('compl-'));
+
+                // Extract vehicle type (between number and maint-)
+                const vehicleTypeParts = parts.slice(3, maintIdx);
+                let vehicleType = vehicleTypeParts.join(' ')
+                    .replace(/_/g, ' ')
+                    .split(' ')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
+
+                // Extract maintenance and compliance
+                const maintenance = parts[maintIdx].includes('yes') ? 'yes' : 'no';
+                const complianceLevel = parts[complIdx].includes('extended') ? 'extended' : 'minimum';
+
+                return {
+                    vehicleType,
+                    maintenance,
+                    complianceLevel
+                };
+            } else {
+                // Old format: chevrolet_silverado_dvir_maintenance
+                const parts = cleanName.split('_');
+                let vehicleType = '';
+                let startIdx = 0;
+
+                if (parts[0] === 'skoda' || parts[0] === 'chevrolet' || parts[0] === 'chevy') {
+                    vehicleType = parts[0] + ' ' + parts[1];
+                    startIdx = 2;
+                }
+
+                vehicleType = vehicleType.split(' ')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
+
+                const hasMaintenance = !parts.includes('no');
+                const complianceLevel = parts.includes('min') ? 'minimum' : 'extended';
+
+                return {
+                    vehicleType,
+                    maintenance: hasMaintenance ? 'yes' : 'no',
+                    complianceLevel
+                };
             }
-        
-            vehicleType = vehicleType.split(' ')
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(' ');
-        
-            const hasMaintenance = !parts.includes('no');
-            const complianceLevel = parts.includes('min') ? 'minimum' : 'extended';
-        
-            return {
-                vehicleType,
-                maintenance: hasMaintenance ? 'yes' : 'no',
-                complianceLevel
-            };
         }
         
         // Render current form

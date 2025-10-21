@@ -1,0 +1,196 @@
+{
+  "Name": "DVIR Form: Trailer",
+  "Description": "Driver Vehicle Inspection Report for Trailers - Minimum Compliance Level, Safety and Regulatory Checks Only",
+  "Items": [
+    {
+      "Name": "Headlights (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Tail Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Turn Signals (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Brake Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Reflectors and Reflective Tape (intact)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Tires - Tread Depth and Condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Wheels and Rims (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Mud Flaps (present, secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Cargo Doors/Gates (secure, hinges intact)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Floor Condition (no rot, damage, or holes)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Frame (no cracks, structural damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Under Trailer - Leaks or Damage",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Landing Gear (operates freely)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Kingpin (condition, lubricated)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Coupling Connection (secure, no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Safety Chains (attached, condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Air Lines/Glad Hands (intact, secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Brake Lines (intact, connections tight)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Emergency Equipment (fire extinguisher, triangles)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 18
+    }
+  ]
+}

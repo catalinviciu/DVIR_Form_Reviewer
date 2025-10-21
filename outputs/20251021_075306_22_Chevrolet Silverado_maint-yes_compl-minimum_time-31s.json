@@ -1,0 +1,334 @@
+{
+  "Name": "DVIR Form: Chevrolet Silverado",
+  "Description": "Driver Vehicle Inspection Report for Chevrolet Silverado with Maintenance Checks and Minimum Compliance Level",
+  "Items": [
+    {
+      "Name": "Headlights (both beams)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Tail lights and brake lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Turn signals (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Reflectors and reflective tape",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Rear view mirror",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Side mirrors (both)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Windshield wipers (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Windshield (no obstruction)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Steering wheel (no excessive play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Parking brake (holds securely)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Service brakes (no soft spots)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Tires (damage, tread, pressure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Wheels and rims (damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Wheels"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Horn functionality",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Seatbelts (functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Interior lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Gauges and warning lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Tailgate (latches securely)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Truck Bed"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Truck bed condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Truck Bed"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Leaks under vehicle",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Exhaust system (damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Frame condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Engine oil level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Coolant level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Brake fluid level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Power steering fluid level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Transmission fluid level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Belts and hoses (cracks, fraying)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Battery (terminals, corrosion)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Air filter condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Unusual noises or vibrations",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Body condition (rust, damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 32
+    }
+  ]
+}

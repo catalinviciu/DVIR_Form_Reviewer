@@ -1,0 +1,494 @@
+{
+  "Name": "DVIR Form: Forklift - Extended Compliance with Maintenance",
+  "Description": "Comprehensive Driver Vehicle Inspection Report for forklifts with extended compliance checks and preventive maintenance items",
+  "Items": [
+    {
+      "Name": "Walkaround Front Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Walkaround Right Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Walkaround Rear Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Walkaround Left Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Frame and Body (cracks, dents, damage)",
+      "Comment": "Inspect main frame for structural integrity",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Tires or Tracks (condition, wear, cuts)",
+      "Comment": "Check for proper inflation and damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Headlights and Taillights (both functioning)",
+      "Comment": "Test all lights, check for broken lenses",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Warning Lights (beacon/strobe operational)",
+      "Comment": "Verify warning light function if equipped",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Horn (audible and functioning)",
+      "Comment": "Test horn operation",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Mirrors (condition and visibility)",
+      "Comment": "Inspect if equipped, ensure proper angles",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Overhead Guard (intact, no damage)",
+      "Comment": "Verify guard is present and properly fastened",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Safety Decals and Markings (visible, legible)",
+      "Comment": "Capacity plates and warning labels readable",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Leaks Under Vehicle (hydraulic, fuel, coolant)",
+      "Comment": "Inspect undercarriage for fluid seepage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Undercarriage Condition (no bent components)",
+      "Comment": "Check for damage from impacts",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Tire Pressure (within specification)",
+      "Comment": "Measure PSI if pneumatic tires equipped",
+      "RequireValue": false,
+      "ValueType": "Numeric",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Seat Condition (secure, no rips or damage)",
+      "Comment": "Inspect cushion and mounting bolts",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Seat Belt (present and functional)",
+      "Comment": "Test belt operation and retraction",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Steering (smooth, centered, no play)",
+      "Comment": "Test steering wheel and response",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Controls"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Brake Pedal (firm, responsive, no sponginess)",
+      "Comment": "Test foot brake operation and feel",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Parking Brake (holds when engaged)",
+      "Comment": "Verify parking brake holds vehicle stationary",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Control Levers (smooth operation, no sticking)",
+      "Comment": "Test all hydraulic control lever movements",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Controls"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Emergency Stop Button (accessible and functional)",
+      "Comment": "Verify emergency stop button operation",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Engine Oil Level (proper level)",
+      "Comment": "Check dipstick or gauge reading",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Coolant Level (within specification)",
+      "Comment": "Inspect expansion tank or radiator level",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Battery Condition (terminals clean, charge indicator)",
+      "Comment": "For electric forklifts - check battery status",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Battery Water Level (if applicable)",
+      "Comment": "For lead-acid batteries - check water level",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Fuel Level (adequate for operation)",
+      "Comment": "For gasoline/diesel models",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Belts and Hoses (no cracks, fraying, or leaks)",
+      "Comment": "Inspect engine belt and cooling hoses",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Engine Starting and Idle (smooth, no unusual sounds)",
+      "Comment": "Test engine startup and idle operation",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Mast Operation (smooth, no binding, vertical alignment)",
+      "Comment": "Raise and lower mast, check for smooth travel",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lift System"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Mast Straightness (no visible bends or twists)",
+      "Comment": "Visually inspect mast for damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lift System"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Forks (no cracks, bends, or excessive wear)",
+      "Comment": "Inspect fork tips and engagement areas",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lift System"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Load Backrest Bar (no cracks, properly fastened)",
+      "Comment": "Verify backrest attachment and condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lift System"
+      ],
+      "Position": 32
+    },
+    {
+      "Name": "Tilt Mechanism (forward/backward tilt responsive)",
+      "Comment": "Test mast tilt - should respond to control input",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lift System"
+      ],
+      "Position": 33
+    },
+    {
+      "Name": "Side Shift Capability (if equipped, responsive)",
+      "Comment": "Test side shift mechanism operation",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lift System"
+      ],
+      "Position": 34
+    },
+    {
+      "Name": "Hydraulic Cylinders (no leaks, rod undamaged)",
+      "Comment": "Inspect lift and tilt cylinders for damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Hydraulics"
+      ],
+      "Position": 35
+    },
+    {
+      "Name": "Hydraulic Hoses (no cracks, fraying, or leaks)",
+      "Comment": "Check all hose connections and routing",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Hydraulics"
+      ],
+      "Position": 36
+    },
+    {
+      "Name": "Hydraulic Fluid Level (within specification)",
+      "Comment": "Check sight glass or dipstick",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Hydraulics"
+      ],
+      "Position": 37
+    },
+    {
+      "Name": "Hydraulic Fluid Condition (check color and clarity)",
+      "Comment": "Look for contamination or dark discoloration",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Hydraulics"
+      ],
+      "Position": 38
+    },
+    {
+      "Name": "Preventive Maintenance: Oil Change Due",
+      "Comment": "Check if scheduled maintenance is due",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 39
+    },
+    {
+      "Name": "Preventive Maintenance: Filter Inspection (oil, fuel)",
+      "Comment": "Visually inspect filters if accessible",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 40
+    },
+    {
+      "Name": "Preventive Maintenance: Lubrication Points",
+      "Comment": "Check if grease points need lubrication",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 41
+    },
+    {
+      "Name": "Preventive Maintenance: Leak Inspection (all systems)",
+      "Comment": "Complete visual inspection under vehicle",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 42
+    },
+    {
+      "Name": "Preventive Maintenance: Belt and Hose Age Assessment",
+      "Comment": "Note any cracking or deterioration",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 43
+    },
+    {
+      "Name": "Preventive Maintenance: Battery Terminals (corrosion, cleanliness)",
+      "Comment": "Check for white/blue corrosion buildup",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 44
+    },
+    {
+      "Name": "Preventive Maintenance: Tire Tread Depth (if applicable)",
+      "Comment": "Use penny test or tread depth gauge",
+      "RequireValue": false,
+      "ValueType": "Numeric",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 45
+    },
+    {
+      "Name": "Preventive Maintenance: Unusual Noises or Vibrations",
+      "Comment": "Report any new/different sounds during operation",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 46
+    },
+    {
+      "Name": "Preventive Maintenance: Body Condition (rust, damage)",
+      "Comment": "Note any new rust spots or cosmetic damage",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 47
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "Record any issues found, maintenance needs, or operational concerns",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 48
+    }
+  ]
+}

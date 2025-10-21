@@ -1,0 +1,264 @@
+{
+  "Name": "DVIR Form: Ford Maverick",
+  "Description": "Driver Vehicle Inspection Report for Ford Maverick with Preventive Maintenance Checks and Minimum Compliance Level",
+  "Items": [
+    {
+      "Name": "Headlights (both)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Taillights (both)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Brake lights (both)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Turn signals (all)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Windshield wipers",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Side mirrors",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Reflectors (all)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Horn",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Bed",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Tailgate",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Leaks (all fluids)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Exhaust system",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Seatbelts (all)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Steering wheel",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Parking brake",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Service brakes",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Tires (tread/pressure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Wheels and rims",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Engine oil level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Coolant level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Brake fluid level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Washer fluid level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Battery (terminals)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Wiper blades",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Belts and hoses",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 25
+    }
+  ]
+}

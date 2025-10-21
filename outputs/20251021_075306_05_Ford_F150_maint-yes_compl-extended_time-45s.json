@@ -1,0 +1,554 @@
+{
+  "Name": "DVIR Form: Ford F150 Pickup Truck",
+  "Description": "Driver Vehicle Inspection Report for Ford F150 with Extended Compliance and Preventive Maintenance Checks",
+  "Items": [
+    {
+      "Name": "Walkaround Front Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Walkaround Right Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Walkaround Rear Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Walkaround Left Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Headlights (low and high beam)",
+      "Comment": "Both beams illuminate properly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Front Turn Signal Lights",
+      "Comment": "Both left and right sides",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Front Parking/Marker Lights",
+      "Comment": "Both sides operational",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Front Reflectors",
+      "Comment": "Securely mounted and visible",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Windshield (condition and wipers)",
+      "Comment": "No cracks, wipers functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Side Mirrors (integrity)",
+      "Comment": "Not cracked or damaged",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Side Reflectors (both sides)",
+      "Comment": "Securely attached, visible",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Running Boards (if equipped)",
+      "Comment": "Secure, no damage or rust",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Doors (all functional)",
+      "Comment": "Locks working, latches secure",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Windows (condition)",
+      "Comment": "Not cracked or damaged",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Rear Tail Lights",
+      "Comment": "Both sides functioning",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Rear Brake Lights",
+      "Comment": "Both sides functioning",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Rear Turn Signal Lights",
+      "Comment": "Both sides functioning",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Rear Reflectors",
+      "Comment": "Securely mounted, visible",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "License Plate Light",
+      "Comment": "Functioning and visible",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Tire Pressure (all tires)",
+      "Comment": "At recommended PSI",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Tire Condition (tread/cuts)",
+      "Comment": "Adequate tread, no cuts/bulges",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Wheels (cracks and bends)",
+      "Comment": "No damage or corrosion",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Rims (damage and separation)",
+      "Comment": "Intact and secure",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Spare Tire (condition)",
+      "Comment": "Inflated and securely mounted",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Service Brakes (pedal feel)",
+      "Comment": "No sponginess, proper engagement",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Parking Brake (holding power)",
+      "Comment": "Engages and holds on grade",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Suspension System (noises)",
+      "Comment": "No clunking or abnormal sounds",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Exhaust System (damage)",
+      "Comment": "No cracks, properly secured",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Fuel System (leaks)",
+      "Comment": "No visible leaks from tank/lines",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Visible Leaks (under vehicle)",
+      "Comment": "Check for oil, coolant, other fluids",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Steering Wheel (free play)",
+      "Comment": "Acceptable range, no excessive play",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Horn (operation)",
+      "Comment": "Sounds audible and clear",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Windshield Wipers (operation/blades)",
+      "Comment": "Both functional, no streaking",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 32
+    },
+    {
+      "Name": "Gauges and Warning Lights",
+      "Comment": "Fuel, temperature, pressure functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 33
+    },
+    {
+      "Name": "Seat Belts (all operational)",
+      "Comment": "All seats have functional belts",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 34
+    },
+    {
+      "Name": "Emergency Equipment (fire extinguisher)",
+      "Comment": "Present and accessible",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 35
+    },
+    {
+      "Name": "Engine Oil Level",
+      "Comment": "Check with dipstick when cold",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 36
+    },
+    {
+      "Name": "Coolant Level and Condition",
+      "Comment": "Proper level when cold",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 37
+    },
+    {
+      "Name": "Brake Fluid Level",
+      "Comment": "At minimum line or higher",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 38
+    },
+    {
+      "Name": "Power Steering Fluid",
+      "Comment": "At proper level when cold",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 39
+    },
+    {
+      "Name": "Belts and Hoses (condition)",
+      "Comment": "No cracks, fraying, or leaks",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 40
+    },
+    {
+      "Name": "Truck Bed Floor (condition)",
+      "Comment": "No rust holes or deterioration",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 41
+    },
+    {
+      "Name": "Tailgate (operation/latches)",
+      "Comment": "Opens/closes smoothly, latches secure",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 42
+    },
+    {
+      "Name": "Bed Tie-Down Points",
+      "Comment": "Secure and not damaged",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 43
+    },
+    {
+      "Name": "Cargo Barriers (if equipped)",
+      "Comment": "Secure and functional",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 44
+    },
+    {
+      "Name": "Hitch (if equipped)",
+      "Comment": "Secure, no cracks or damage",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 45
+    },
+    {
+      "Name": "Safety Chains (if equipped)",
+      "Comment": "Present, attached, no damage",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 46
+    },
+    {
+      "Name": "Wiring Connector (if equipped)",
+      "Comment": "Clean, functional, no corrosion",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 47
+    },
+    {
+      "Name": "Engine Oil Condition",
+      "Comment": "Check color and level, top up if needed",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 48
+    },
+    {
+      "Name": "Fluid Leak Check (underneath)",
+      "Comment": "Inspect for oil, coolant, transmission leaks",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 49
+    },
+    {
+      "Name": "Battery Condition (terminals/corrosion)",
+      "Comment": "Clean terminals, no corrosion or damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 50
+    },
+    {
+      "Name": "Air Filter Condition (if accessible)",
+      "Comment": "Clean or replace if clogged",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 51
+    },
+    {
+      "Name": "Unusual Noises or Vibrations",
+      "Comment": "Report during operation",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 52
+    },
+    {
+      "Name": "Transmission Fluid Level",
+      "Comment": "Check with engine running at operating temp",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Fluids"
+      ],
+      "Position": 53
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "Note any issues or observations",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 54
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "Name": "DVIR Form: Ram 1500 Pickup Truck",
+  "Description": "Driver Vehicle Inspection Report for Ram 1500 with Minimum Compliance Level",
+  "Items": [
+    {
+      "Name": "Headlights (both beams)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Tail Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Turn Signals (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Brake Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Reflectors (body reflectors)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Windshield Wipers (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Mirrors (condition and secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Horn (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Tire Condition (tread depth)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Tire Pressure (all tires)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Wheels and Rims (cracks/damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Steering Wheel (play/operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Service Brake Pedal (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Parking Brake (holds vehicle)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Body Damage (front/sides/rear)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Cargo Bed Condition (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Tailgate (operation and latch)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Exhaust System (no damage/leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Suspension (no visible damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Emergency Equipment (fire extinguisher)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 19
+    }
+  ]
+}

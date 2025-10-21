@@ -1,0 +1,146 @@
+{
+  "Name": "DVIR Form: Forklift",
+  "Description": "Driver Vehicle Inspection Report for Forklift - Minimum Compliance Level, Safety Inspection Only",
+  "Items": [
+    {
+      "Name": "Forks (cracks, bends, damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Mast (smooth operation, no binding)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Load Handling"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Load Backrest (present, secure, intact)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Overhead Guard (intact, securely fastened)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "OSHA Required"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Tilt Mechanism (operates smoothly)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Load Handling"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Tire Condition (all, cuts, bulges)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Brakes (adequate stopping ability)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Horn (audible, functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Backup Alarm (functional, if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Lights (functional, if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Seat Belt (present, functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "OSHA Required"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Steering (responsive, no excessive play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Frame (no visible cracks, bending)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Structural"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Load Capacity Nameplate (visible, legible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "OSHA Required"
+      ],
+      "Position": 13
+    }
+  ]
+}

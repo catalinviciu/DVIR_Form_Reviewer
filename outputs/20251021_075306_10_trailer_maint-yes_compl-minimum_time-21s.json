@@ -1,0 +1,304 @@
+{
+  "Name": "DVIR Form: Trailer Inspection",
+  "Description": "Driver Vehicle Inspection Report for Trailers with Preventive Maintenance Checks and Minimum Compliance Level",
+  "Items": [
+    {
+      "Name": "Frame and Structure (cracks, bends, rust)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Side Panels and Skirt (condition, damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Mud Flaps (attached, condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Visible Leaks (under trailer)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Undercarriage (damage, debris)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Stop Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Tail Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Turn Signals (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Marker Lights (amber/red)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Light Connections (secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Red Reflective Tape (rear)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reflectors"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Amber Reflective Tape (sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reflectors"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Tire Tread Depth (1/4 inch minimum)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Tire Damage (punctures, cuts, bulges)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Tire Pressure (all tires)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Wheel Studs/Bolts (tight, not missing)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Wheel Rims (no cracks, rust, damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Brake Lines (no leaks, secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Brake Connections (tight, corrosion-free)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Air Line Connections (no leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Kingpin and Coupling (no cracks, loose)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Safety Chains (attached, condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Landing Gear (operates smoothly)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Trailer Door Operation (smooth, secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Doors"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Door Latches and Locks (function)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Doors"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Brake Fluid Level (if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Air Pressure Check (brake system)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Leak Inspection (under entire trailer)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Rust and Corrosion (body condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 29
+    }
+  ]
+}

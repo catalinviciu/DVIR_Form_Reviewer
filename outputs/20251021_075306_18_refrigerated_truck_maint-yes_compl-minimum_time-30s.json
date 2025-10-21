@@ -1,0 +1,354 @@
+{
+  "Name": "DVIR Form: Refrigerated Truck",
+  "Description": "Driver Vehicle Inspection Report for Refrigerated Truck with Preventive Maintenance Checks - Minimum Compliance Level",
+  "Items": [
+    {
+      "Name": "Headlights (both beams)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Turn Signals (all)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Tail Lights and Brake Lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Reflectors and Reflective Tape",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Horn Operational",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Windshield Wipers and Washers",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Rear View Mirrors (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Tire Tread Depth and Condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Tire Pressure (all tires)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Wheels and Lug Nuts",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Spare Tire (present and good)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Service Brakes Operational",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Parking Brake Operational",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Air Brake Connections (if applicable)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Steering Mechanism (no excessive play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Power Steering Fluid Level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Fuel, Coolant, and Oil Leaks",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Exhaust System Intact",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Seat and Safety Belt Condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Fire Extinguisher and Warning Triangles",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Doors and Locks Operational",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Interior Lights Operational",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Reefer Unit Exterior Condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reefer Unit"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Temperature Display and Controls Operational",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reefer Unit"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Reefer Doors and Seals (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reefer Unit"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Reefer Interior Clean and Undamaged",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reefer Unit"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Reefer Power Connections and Fuel",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Reefer Unit"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Engine Oil Level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Coolant Level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Brake Fluid Level",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Battery Condition (terminals, corrosion)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Engine Compartment Fluid Leaks",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Belts and Hoses Condition",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 32
+    },
+    {
+      "Name": "Reefer Refrigerant System (no visible leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 33
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 34
+    }
+  ]
+}

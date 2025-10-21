@@ -1,0 +1,206 @@
+{
+  "Name": "DVIR Form: GMC Sierra",
+  "Description": "Driver Vehicle Inspection Report for GMC Sierra with Minimum Compliance Level",
+  "Items": [
+    {
+      "Name": "Headlights (both beams)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Tail Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Turn Signals (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Brake Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Windshield Wipers (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Rear View Mirrors (condition, secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Horn (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Tire Condition (all tires)",
+      "Comment": "Check for damage, tread depth, pressure",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Wheels and Rims (condition, lugs)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Wheels"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Reflectors and Reflective Tape",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Steering Wheel (play, operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Parking Brake (operation, holding)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Service Brakes (pedal, operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Seat Belts (condition, retract)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Emergency Equipment (triangles, flares)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Hitch or Towing Package (if equipped)",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Engine Starts and Runs (no unusual sounds)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Engine Compartment (no visible leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Pickup Bed Condition (damage, rust)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Body"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Tailgate Operation (secure, latches)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Body"
+      ],
+      "Position": 19
+    }
+  ]
+}

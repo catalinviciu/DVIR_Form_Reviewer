@@ -1,0 +1,594 @@
+{
+  "Name": "DVIR Form: Passenger Car",
+  "Description": "Driver Vehicle Inspection Report for Passenger Car with Extended Compliance Coverage",
+  "Items": [
+    {
+      "Name": "Walkaround Front Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Walkaround Right Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Walkaround Rear Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Walkaround Left Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Headlights (low and high beam)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Tail Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Brake Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Turn Signals (front and rear)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Hazard Warning Lights",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Front Reflectors (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Rear Reflectors (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Windshield (no cracks/obstructions)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Windshield Wipers (operation/condition)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Windshield Washer Fluid (adequate level)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Rearview Mirror (secure/clean)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Side Mirrors (both sides/secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Horn (proper function)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Front Tires (pressure/condition/tread)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Rear Tires (pressure/condition/tread)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Spare Tire (condition/accessible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Front Wheels and Rims (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Rear Wheels and Rims (no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Lug Nuts (all secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Bumpers (secure/no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Body Panel Condition (dents/damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Paint/Finish (rust or corrosion)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Front Doors (secure/no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Rear Doors (secure/no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Door Locks (all functioning)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Windows (all operating smoothly)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Glass Condition (no cracks/chips)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Roof/Sunroof (condition/operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Exhaust System (no visible damage/leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 32
+    },
+    {
+      "Name": "Undercarriage (fluid leaks visible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 33
+    },
+    {
+      "Name": "Frame/Suspension (no visible damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Under Vehicle"
+      ],
+      "Position": 34
+    },
+    {
+      "Name": "Steering Wheel (proper response/no play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 35
+    },
+    {
+      "Name": "Steering Column (secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 36
+    },
+    {
+      "Name": "Service Brakes (pedal firmness/response)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 37
+    },
+    {
+      "Name": "Brake Pedal (no excessive travel)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 38
+    },
+    {
+      "Name": "Parking Brake (effective holding)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 39
+    },
+    {
+      "Name": "Brake Fluid Level (proper level)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 40
+    },
+    {
+      "Name": "Seatbelts (all functioning/secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 41
+    },
+    {
+      "Name": "Airbag Warning Light (no malfunction)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 42
+    },
+    {
+      "Name": "Driver Seat (secure/no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 43
+    },
+    {
+      "Name": "Passenger Seats (secure/functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 44
+    },
+    {
+      "Name": "Dashboard Warning Lights (no active warnings)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 45
+    },
+    {
+      "Name": "Speedometer/Odometer (functioning)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 46
+    },
+    {
+      "Name": "Fuel Gauge (accurate reading)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 47
+    },
+    {
+      "Name": "Interior Lighting (headliner/dome lights)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 48
+    },
+    {
+      "Name": "Climate Control (heating/AC operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Interior"
+      ],
+      "Position": 49
+    },
+    {
+      "Name": "Battery (secure/corrosion-free)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 50
+    },
+    {
+      "Name": "Engine Compartment (no fluid leaks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 51
+    },
+    {
+      "Name": "Belts and Hoses (no visible cracks)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 52
+    },
+    {
+      "Name": "Radiator Fluid Level (proper level)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 53
+    },
+    {
+      "Name": "Fire Extinguisher (accessible/charged)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 54
+    },
+    {
+      "Name": "Warning Triangles (accessible/functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 55
+    },
+    {
+      "Name": "First Aid Kit (present/accessible)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 56
+    },
+    {
+      "Name": "Emergency Flares (accessible/functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 57
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 58
+    }
+  ]
+}

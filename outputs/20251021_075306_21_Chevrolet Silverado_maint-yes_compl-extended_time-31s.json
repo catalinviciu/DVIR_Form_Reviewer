@@ -1,0 +1,454 @@
+{
+  "Name": "DVIR Form: Chevrolet Silverado",
+  "Description": "Driver Vehicle Inspection Report for Chevrolet Silverado with Extended Compliance and Preventive Maintenance Checks",
+  "Items": [
+    {
+      "Name": "Walkaround Front Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Walkaround Right Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Walkaround Rear Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Walkaround Left Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Headlights (both beams functional)",
+      "Comment": "Check high and low beam operation",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Tail Lights (both sides)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Turn Signals (left and right)",
+      "Comment": "Check all four turn signal lights",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Brake Lights (both sides)",
+      "Comment": "Verify operation during braking",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Hazard Lights (all four corners)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Reflectors and Reflective Tape",
+      "Comment": "Check side reflectors and tape condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Side Mirrors (condition and adjustment)",
+      "Comment": "Check for cracks, loose mounting",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Rear View Mirror (interior)",
+      "Comment": "Check condition and adjustment",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Windshield Wipers (operation and condition)",
+      "Comment": "Test both speeds and check blade wear",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Windshield (cracks / damage)",
+      "Comment": "Check for obstructions in driver view",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Visibility"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Tire Front Left (pressure / tread / damage)",
+      "Comment": "Check for proper inflation and wear",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Tire Front Right (pressure / tread / damage)",
+      "Comment": "Check for proper inflation and wear",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Tire Rear Left (pressure / tread / damage)",
+      "Comment": "Check for proper inflation and wear",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Tire Rear Right (pressure / tread / damage)",
+      "Comment": "Check for proper inflation and wear",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Spare Tire (condition / securely mounted)",
+      "Comment": "Verify secure mounting and no damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Wheels and Rims (condition / missing lug nuts)",
+      "Comment": "Check for bent rims, missing or loose lugs",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Wheels"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Horn (operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Steering Wheel (no play / smooth operation)",
+      "Comment": "Check for excessive play and binding",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Service Brake (foot brake responsiveness)",
+      "Comment": "Test brake engagement and effectiveness",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Brake Pedal (travel / feel)",
+      "Comment": "Check pedal response and firmness",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Parking Brake (engagement and hold)",
+      "Comment": "Verify secure holding and smooth engagement",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Suspension System (visible damage / unusual noise)",
+      "Comment": "Check springs, shocks, and control arms",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Suspension"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Exhaust System (leaks / damage / loose)",
+      "Comment": "Check for holes, rust, and secure mounting",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Frame and Undercarriage (rust / damage / cracks)",
+      "Comment": "Visible inspection from ground level",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Structural"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Body Damage (dents / scratches / rust)",
+      "Comment": "Check exterior condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Doors and Hardware (operation / latches)",
+      "Comment": "Check door locks, latches, and hinges",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Cab Interior Seating (condition / secure)",
+      "Comment": "Check seat attachment and condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Safety Equipment (fire extinguisher / warning triangles)",
+      "Comment": "Verify presence and accessibility",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Tow Hitch (condition / secure / safety pin)",
+      "Comment": "Check for damage, corrosion, and security",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Coupling"
+      ],
+      "Position": 32
+    },
+    {
+      "Name": "Engine Oil Level (proper level)",
+      "Comment": "Check when engine is cold or after warm cooldown",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 33
+    },
+    {
+      "Name": "Coolant Level (proper level / no leaks)",
+      "Comment": "Check when engine is cool",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 34
+    },
+    {
+      "Name": "Brake Fluid Level (proper level)",
+      "Comment": "Check when vehicle is on level ground",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 35
+    },
+    {
+      "Name": "Power Steering Fluid (proper level)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 36
+    },
+    {
+      "Name": "Transmission Fluid (proper level / color)",
+      "Comment": "Check color for condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 37
+    },
+    {
+      "Name": "Windshield Washer Fluid (adequate level)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 38
+    },
+    {
+      "Name": "Battery Condition (terminals / corrosion / secure)",
+      "Comment": "Check for corrosion, loose connections, damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 39
+    },
+    {
+      "Name": "Belts and Hoses (cracks / fraying / leaks)",
+      "Comment": "Check serpentine belt and radiator hoses",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 40
+    },
+    {
+      "Name": "Air Filter Condition (clean / serviceable)",
+      "Comment": "Check visible condition",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 41
+    },
+    {
+      "Name": "Visible Leaks (oil / coolant / brake / transmission)",
+      "Comment": "Check under vehicle from ground level",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 42
+    },
+    {
+      "Name": "Unusual Noises or Vibrations (during operation)",
+      "Comment": "Note any abnormal sounds or vibrations",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Maintenance"
+      ],
+      "Position": 43
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 44
+    }
+  ]
+}

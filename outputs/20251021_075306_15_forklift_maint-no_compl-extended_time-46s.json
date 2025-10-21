@@ -1,0 +1,284 @@
+{
+  "Name": "DVIR Form: Forklift",
+  "Description": "Driver Vehicle Inspection Report for Forklifts with Extended Compliance Level",
+  "Items": [
+    {
+      "Name": "Walkaround Front Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Walkaround Right Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Walkaround Rear Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Walkaround Left Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Frame and Counterweight (no cracks/bends)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Structural Integrity"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Overhead Guard (present and secure)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Forks (alignment and no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Mast (no cracks/bends/free movement)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Mast Raise and Lower (smooth operation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Tilt Mechanism (free movement/no binding)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Load Backrest (secure and undamaged)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Load Capacity Plate (visible and readable)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Chains and Attachments (secure/no damage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lifting"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Hydraulic Hoses (no leaks/damage/tight)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Hydraulic"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Steering (responsive/no excessive play)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "Foot Brake (responsive/holds load)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Parking Brake (effective/no slippage)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Tires and Wheels (condition/inflation)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Horn (audible and operational)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Warning Lights (working if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Backup Alarm (operational if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Emergency Stop Button (functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Seat (secure and not damaged)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Operator Area"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Seat Belt (present and functional)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Control Levers (responsive/return to neutral)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Operator Area"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Operator Visibility (clear sightlines)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Operator Area"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Fire Extinguisher (present if equipped)",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety Equipment"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 27
+    }
+  ]
+}

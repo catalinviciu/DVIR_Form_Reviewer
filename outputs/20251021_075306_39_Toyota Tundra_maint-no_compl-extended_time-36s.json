@@ -1,0 +1,564 @@
+{
+  "Name": "DVIR Form: Toyota Tundra",
+  "Description": "Driver Vehicle Inspection Report for Toyota Tundra with Extended Compliance Level Safety Checks",
+  "Items": [
+    {
+      "Name": "Walkaround Front Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 0
+    },
+    {
+      "Name": "Walkaround Right Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 1
+    },
+    {
+      "Name": "Walkaround Rear Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 2
+    },
+    {
+      "Name": "Walkaround Left Side Photo",
+      "Comment": "",
+      "RequireValue": true,
+      "ValueType": "Photo",
+      "Tags": [
+        "Walkaround Photos"
+      ],
+      "Position": 3
+    },
+    {
+      "Name": "Headlights (both beams)",
+      "Comment": "Check high and low beams functioning",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 4
+    },
+    {
+      "Name": "Parking Lights (both sides)",
+      "Comment": "Front and rear parking lights operational",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 5
+    },
+    {
+      "Name": "Front Turn Signals (both sides)",
+      "Comment": "Flashing properly on both sides",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 6
+    },
+    {
+      "Name": "Front Bumper (damage/condition)",
+      "Comment": "Check for cracks, bends, or missing parts",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 7
+    },
+    {
+      "Name": "Windshield (cracks/damage)",
+      "Comment": "Check for chips, cracks, or obstruction",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 8
+    },
+    {
+      "Name": "Windshield Wipers (operation)",
+      "Comment": "Blades clean and functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 9
+    },
+    {
+      "Name": "Washer Fluid (adequate level)",
+      "Comment": "Reservoir full for visibility",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 10
+    },
+    {
+      "Name": "Front Side Markers (both sides)",
+      "Comment": "Lights functioning and lens intact",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 11
+    },
+    {
+      "Name": "Tail Lights (both sides)",
+      "Comment": "Red lights functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 12
+    },
+    {
+      "Name": "Brake Lights (both sides)",
+      "Comment": "Lights functioning when brakes applied",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 13
+    },
+    {
+      "Name": "Rear Turn Signals (both sides)",
+      "Comment": "Amber lights flashing properly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 14
+    },
+    {
+      "Name": "License Plate Lights (both sides)",
+      "Comment": "Plates clearly illuminated",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 15
+    },
+    {
+      "Name": "Backup Lights (if equipped)",
+      "Comment": "White lights functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 16
+    },
+    {
+      "Name": "Reflectors/Reflective Tape (intact)",
+      "Comment": "All reflective surfaces present and visible",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Lighting"
+      ],
+      "Position": 17
+    },
+    {
+      "Name": "Front Tires (tread depth)",
+      "Comment": "Minimum 4/32 inch; check all tires",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 18
+    },
+    {
+      "Name": "Front Tires (pressure/condition)",
+      "Comment": "Proper inflation and no bulges/cuts",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 19
+    },
+    {
+      "Name": "Rear Tires (tread depth)",
+      "Comment": "Minimum 2/32 inch for dual; check all",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 20
+    },
+    {
+      "Name": "Rear Tires (pressure/condition)",
+      "Comment": "Proper inflation and no bulges/cuts",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 21
+    },
+    {
+      "Name": "Lug Nuts/Bolts (all tight)",
+      "Comment": "Check all wheels secure",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 22
+    },
+    {
+      "Name": "Front Wheels (damage/cracks)",
+      "Comment": "No bent or cracked wheels",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 23
+    },
+    {
+      "Name": "Rear Wheels (damage/cracks)",
+      "Comment": "No bent or cracked wheels",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Tires"
+      ],
+      "Position": 24
+    },
+    {
+      "Name": "Truck Bed Structure (intact)",
+      "Comment": "No bent, cracked, or broken bed components",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 25
+    },
+    {
+      "Name": "Bed Rust/Damage (condition)",
+      "Comment": "Check for severe rust or corrosion",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 26
+    },
+    {
+      "Name": "Tailgate (operation/latches)",
+      "Comment": "Opens/closes smoothly and latches secure",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 27
+    },
+    {
+      "Name": "Tailgate Damage (structural)",
+      "Comment": "No dents, cracks, or missing hinges",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 28
+    },
+    {
+      "Name": "Cargo Tie-Down Points (secure)",
+      "Comment": "Attachment points functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 29
+    },
+    {
+      "Name": "Rear Bumper (damage/condition)",
+      "Comment": "Check for cracks, bends, or missing parts",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 30
+    },
+    {
+      "Name": "Driver Side Mirror (intact/secure)",
+      "Comment": "Mirror and glass undamaged",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 31
+    },
+    {
+      "Name": "Passenger Side Mirror (intact/secure)",
+      "Comment": "Mirror and glass undamaged",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 32
+    },
+    {
+      "Name": "Side Windows (intact/functional)",
+      "Comment": "No cracks; windows open/close properly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 33
+    },
+    {
+      "Name": "Door Handles (functioning)",
+      "Comment": "All doors open/close smoothly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 34
+    },
+    {
+      "Name": "Doors/Body Panels (damage)",
+      "Comment": "No major dents, cracks, or misalignment",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 35
+    },
+    {
+      "Name": "Frame Damage (visible)",
+      "Comment": "No bent or broken frame components",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 36
+    },
+    {
+      "Name": "Exhaust System (intact)",
+      "Comment": "Muffler and pipes secure, no dragging",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 37
+    },
+    {
+      "Name": "Fuel Tank/Line (no leaks)",
+      "Comment": "No visible fuel leaks underneath",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 38
+    },
+    {
+      "Name": "Brake Lines/Hoses (condition)",
+      "Comment": "No cracks, leaks, or loose connections",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 39
+    },
+    {
+      "Name": "Undercarriage Damage (visible)",
+      "Comment": "Check for rust, debris, or structural damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Exterior"
+      ],
+      "Position": 40
+    },
+    {
+      "Name": "Steering Wheel (condition/play)",
+      "Comment": "No excessive looseness or damage",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Steering"
+      ],
+      "Position": 41
+    },
+    {
+      "Name": "Horn (functioning)",
+      "Comment": "Horn sounds audibly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety"
+      ],
+      "Position": 42
+    },
+    {
+      "Name": "Interior Mirrors (properly adjusted)",
+      "Comment": "Rearview mirror clear and functional",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 43
+    },
+    {
+      "Name": "Brake Pedal (operation/feel)",
+      "Comment": "No sponginess; brakes respond firmly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 44
+    },
+    {
+      "Name": "Parking Brake (functioning)",
+      "Comment": "Holds vehicle on slope",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Braking"
+      ],
+      "Position": 45
+    },
+    {
+      "Name": "Seatbelts (all functional)",
+      "Comment": "All belts secure and retract properly",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety"
+      ],
+      "Position": 46
+    },
+    {
+      "Name": "Seats (structural integrity)",
+      "Comment": "No damage or loose components",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 47
+    },
+    {
+      "Name": "Dashboard Warning Lights (check)",
+      "Comment": "No warning lights illuminated",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Cab Interior"
+      ],
+      "Position": 48
+    },
+    {
+      "Name": "Emergency Equipment (present)",
+      "Comment": "First aid kit, triangle, or flares available",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety"
+      ],
+      "Position": 49
+    },
+    {
+      "Name": "Battery Terminals (clean/secure)",
+      "Comment": "No corrosion or loose connections",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 50
+    },
+    {
+      "Name": "Battery (secure in mount)",
+      "Comment": "Battery held firmly in place",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 51
+    },
+    {
+      "Name": "Hoses (cracks/damage)",
+      "Comment": "Check radiator and heater hoses",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 52
+    },
+    {
+      "Name": "Engine Compartment (visible leaks)",
+      "Comment": "Check for oil, coolant, or fluid leaks",
+      "RequireValue": true,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Engine"
+      ],
+      "Position": 53
+    },
+    {
+      "Name": "Fire Extinguisher (if required)",
+      "Comment": "Present and accessible",
+      "RequireValue": false,
+      "ValueType": "Checkbox",
+      "Tags": [
+        "Safety"
+      ],
+      "Position": 54
+    },
+    {
+      "Name": "Driver Comments",
+      "Comment": "Record any issues, defects, or observations",
+      "RequireValue": false,
+      "ValueType": "Text",
+      "Tags": [],
+      "Position": 55
+    }
+  ]
+}
